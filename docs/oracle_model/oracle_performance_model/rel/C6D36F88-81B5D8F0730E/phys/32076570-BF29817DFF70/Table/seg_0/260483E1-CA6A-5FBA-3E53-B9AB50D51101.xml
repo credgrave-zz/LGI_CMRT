@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="FACT_AVAILABILITY" directorySegmentName="seg_0" id="260483E1-CA6A-5FBA-3E53-B9AB50D51101">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DIM_CONTENT_SYNOPSIS_ID" id="0F7978C4-A848-7A6B-7945-B6FE74DE9CF4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:34 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_DIM_ID" id="213F5C96-A052-7D01-D833-9336E2F39927">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:58 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_CONTENT_ID" id="38B647A0-92D0-E8AB-9731-9A5E76E20361">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:55 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_SYSTEM_ID" id="969B22BF-749E-8527-A395-F83D27954B55">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:43 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_COUNTRY_ID" id="AB8D168A-85EA-AC22-8F20-BFA96D331C4A">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:08:05 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_CONTENT_CERTIFICATION_ID" id="B851C441-0B46-6C14-C8FD-974294A7F832">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:51 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_CONTENT_KEYWORD_ID" id="D87DBFBF-F9C5-48A1-59E5-1DCDD149E891">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:05:30 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_CONTENT_KEYWORK_ID" id="F9B2AA8A-78D4-B00C-052F-81F98035823C">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:48 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIM_CONTENT_GENRE_ID" id="FA739901-A456-C053-1A38-FC630F50DB9D">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:06:25 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_AVAILABILITY_DIM_CONTENT_GENRE_FK" id="166E70C1-D2F1-0319-53C2-B637840A8003">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:06:25 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_AVAILABILITY_DIM_SYSTEM_FK" id="36BDCF99-41BA-37D4-5B56-47AE4016B74C">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:43 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_AVAILABILITY_DIM_CONTENT_CERTIFICATION_FK" id="64E9A5C7-8AF2-C72F-A3A0-AC4FA8105B03">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:51 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_AVAILABILITY_DIM_COUNTRY_FK" id="98FC4EF3-A3FB-739A-9CC8-60901FCC541B">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:08:05 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_AVAILABILITY_DIM_DATE_FK" id="A67D71B0-2088-5F85-AC2C-41498C6B26A7">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:58 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_AVAILABILITY_DIM_CONTENT_FK" id="A74BA41F-5C38-4204-FC9E-84253DED3FA0">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:55 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_AVAILABILITY_DIM_CONTENT_CREDITS_FK" id="AC2CEDE8-EA12-80D4-6D9A-81ED7AC616C8">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:48 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_AVAILABILITY_DIM_CONTENT_KEYWORD_FK" id="CB9BAB7D-6253-0935-83B4-FFF626DF9471">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:05:30 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACT_AVAILABILITY_DIM_CONTENT_SYNOPSIS_FK" id="FB45F9EF-4D17-9BE4-35DE-2AF9A35D3EF4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:34 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

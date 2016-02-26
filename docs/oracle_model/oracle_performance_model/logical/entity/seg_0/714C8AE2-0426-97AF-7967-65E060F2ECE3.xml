@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="714C8AE2-0426-97AF-7967-65E060F2ECE3" name="FACT AVAILABILITY">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>260483E1-CA6A-5FBA-3E53-B9AB50D51101</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DIM CONTENT KEYWORD ID" id="7AB1FF6E-9EB5-ADD5-A50A-D4FBB40A36D4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>07DDCB22-EB97-6808-6B54-ED73404B2364</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<referedAttribute>39A923F0-90F9-488F-80C0-29EE5C7BBFEE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIM CONTENT GENRE ID" id="58EB0D30-7561-DFAB-83BC-1C139D4BC099">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>DB2D4529-8106-E93E-61A6-D27D0B1CBB29</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<referedAttribute>0A5F4026-320F-8BC8-B7F6-A79D5B7AE476</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIM CONTENT SYNOPSIS ID" id="4574415D-AD21-F991-C2B7-B673006665F4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>79C89B15-F699-B1A6-B5A4-CE9DB7EC1B2F</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<referedAttribute>33D3E3C5-BAC3-C590-CBA9-374DEF983FBC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIM SYSTEM ID" id="17B3794E-379C-C0E5-0D0F-7ECE5F5C2994">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>52C41E94-F39D-D10C-ACAE-DCC33DF1358F</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<referedAttribute>DA65B9D3-83A0-7602-E682-0274A0ED064B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIM CONTENT KEYWORK ID" id="9FB52585-A64B-6C93-51F2-76CCEEC8BDB6">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>0E6A0C7F-3856-76D8-7FC9-8CA51A30EF93</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<referedAttribute>E17B6A52-008C-10E4-6CF3-97E879282202</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIM CONTENT CERTIFICATION ID" id="A139DF31-55F8-5B17-88DA-C67704CB3393">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>20864CCD-D36E-58F8-B79A-E2E8C80DA01A</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<referedAttribute>2F8E9E8B-109B-7FC1-7971-0362D88FAB37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIM CONTENT ID" id="854DD834-ED41-2331-0817-6A94C01F1DD5">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>10A0B024-E9E6-1B2C-330B-211FEC557434</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<referedAttribute>0DF20810-2A74-FE09-47BD-057BD51CF422</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE DIM ID" id="66FD921C-9A40-BD87-B792-4D17E33B9F31">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>92AAC3B4-182E-4009-2FC2-01538A94BF86</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<referedAttribute>3A7D25E9-01C7-4E4A-AA9F-E5FB9F6CF239</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIM COUNTRY ID" id="A4782241-4E3C-ABF6-EB50-D0B273BDCD0C">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>BCC04905-34D1-D9BB-32B0-E13E02A4F282</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<referedAttribute>598F153F-4F02-57E9-8BB8-771C805EC856</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXISTS" id="7D6DBB33-EE4B-2FF6-4FA2-924F5F9C3E93">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<commentInRDBMS>Whether or not a given content is available on a system.</commentInRDBMS>
+<generatorID>625DD544-8FC8-E3F4-AC55-CF88808348FC</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

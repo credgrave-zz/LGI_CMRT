@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_DATE" directorySegmentName="seg_0" id="E658CE8E-F181-8E52-E0BF-47E7FEEA50D8">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MONTH_NAME" id="01D67155-6401-50BE-5F69-7919538D4DFA">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:20:57 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBJECT_WID" id="74F7DC26-0747-E5D5-E89F-98B915A3E56F">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAY_NAME" id="8025C2E5-F1E1-9060-6D2B-B258467B21D7">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:20:57 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="YEAR" id="98377FD2-C674-359B-BCFC-447EF47AE932">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:20:57 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MONTH_NUMBER" id="F709BAEA-B3B6-7B52-18F7-5E4CCF5AA74B">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:20:57 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_DATE_PK" id="A70575CB-CE8E-F4CF-842F-8671419BCB1F">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

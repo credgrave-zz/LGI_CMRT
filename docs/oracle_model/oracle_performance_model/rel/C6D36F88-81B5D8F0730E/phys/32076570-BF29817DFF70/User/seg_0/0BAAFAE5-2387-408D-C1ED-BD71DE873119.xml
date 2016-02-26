@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="PERF_CMRT_USER" directorySegmentName="seg_0" id="0BAAFAE5-2387-408D-C1ED-BD71DE873119">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 10:46:09 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<schemaObject>23698B14-0A63-F7E3-FB97-19A3627BA8A5</schemaObject>
+<identifier>055BB9235E4D1DD4871E9967C59CBE8608</identifier>
+</UserOraclev10g>

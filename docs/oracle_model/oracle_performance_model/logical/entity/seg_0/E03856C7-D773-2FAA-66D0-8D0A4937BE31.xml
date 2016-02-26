@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E03856C7-D773-2FAA-66D0-8D0A4937BE31" name="DIM CONTENT SYNOPSIS">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>C4F2094D-2B0E-BAC7-BCB3-1F722F6A3A1D</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DIM CONTENT SYNOPSIS ID" id="33D3E3C5-BAC3-C590-CBA9-374DEF983FBC">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>DFD7558D-3582-5309-93A2-0FD1C331AED8</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LANGUAGE" id="50DA31EF-720B-0620-DA25-FDB855DBB1E4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>27495C07-385F-D2AF-1BBD-E760EFD77AC3</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SHORT SYNOPSIS" id="07D53E3E-838E-90DB-A1C2-B79D19603B16">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>E9AD9CC9-3B42-54ED-482D-049605D79970</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEDIUM SYNOPSIS" id="F90C45E5-34F1-0433-648C-5DF0BA0A3869">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>8B0FB156-E8B3-740F-BE01-7020CD1E5FCD</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LONG SYNOPSIS" id="B82FC1F2-A55C-7E95-CD81-B046EBAE3A09">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>AB021BEA-50C1-4320-00DD-5ADBAE356961</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B35C901B-8754-F626-8A3A-92A4F4254ECC" name="DIM CONTENT SYNOPSIS ID">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>1E3F641C-3F38-A74E-5340-18C17B0F5EB0</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>33D3E3C5-BAC3-C590-CBA9-374DEF983FBC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

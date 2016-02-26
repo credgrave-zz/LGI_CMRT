@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28B05A30-BEED-824D-91B1-97314E781219" schemaObject="23698B14-0A63-F7E3-FB97-19A3627BA8A5" name="DIM_CONTENT_GENRE">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:57:51 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECT_WID" id="50251FCC-AF15-12A4-D519-DA8C52B6B9D6">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:58:19 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENRE" id="A82ADC35-CD28-8080-0EDD-5078DD4836C3">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:58:40 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUB_GENRE" id="8DC88C18-2341-B476-96F7-0B0F30E315A0">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:58:40 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B51E330-8B26-0D40-F17C-B1FB5F439F4E" name="DIM_CONTENT_GENRE_ID">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:58:19 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50251FCC-AF15-12A4-D519-DA8C52B6B9D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

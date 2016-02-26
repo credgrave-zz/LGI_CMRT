@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D9455B3D-9E1C-ED7B-12E5-714EE9BD44C1" name="DIM SYSTEM">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>36F85025-56F9-4812-5BAA-604B11BD3DB1</generatorID>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DIM SYSTEM ID" id="DA65B9D3-83A0-7602-E682-0274A0ED064B">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>29265ABB-9CBD-F941-BAF0-E5B492D227A4</generatorID>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SYSTEM NAME" id="37ED05B3-B460-AD16-BCDB-2258427A0179">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>9F622EDC-3519-23C4-1D3C-31053EE42468</generatorID>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="687935B5-2E1C-5DD1-3476-89A4DD18AA44" name="DIM SYSTEM PK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>0483A31F-7DE5-6F95-1F11-9DD0F5CFB2D9</generatorID>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DA65B9D3-83A0-7602-E682-0274A0ED064B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

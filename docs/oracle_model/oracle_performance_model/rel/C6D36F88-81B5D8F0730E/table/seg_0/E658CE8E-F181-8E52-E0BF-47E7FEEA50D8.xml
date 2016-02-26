@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E658CE8E-F181-8E52-E0BF-47E7FEEA50D8" name="DIM_DATE">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:00:41 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECT_WID" id="74F7DC26-0747-E5D5-E89F-98B915A3E56F">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:00:54 UTC</createdTime>
+<commentInRDBMS>Date in the format YYYYMMDD</commentInRDBMS>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_NAME" id="8025C2E5-F1E1-9060-6D2B-B258467B21D7">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:20:57 UTC</createdTime>
+<commentInRDBMS>Date in DD-MON-YYYY format</commentInRDBMS>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH_NAME" id="01D67155-6401-50BE-5F69-7919538D4DFA">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:20:57 UTC</createdTime>
+<commentInRDBMS>Full Month name, e.g. September</commentInRDBMS>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH_NUMBER" id="F709BAEA-B3B6-7B52-18F7-5E4CCF5AA74B">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:20:57 UTC</createdTime>
+<commentInRDBMS>Month in MM Format</commentInRDBMS>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YEAR" id="98377FD2-C674-359B-BCFC-447EF47AE932">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:20:57 UTC</createdTime>
+<commentInRDBMS>Year in YYYY format</commentInRDBMS>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A70575CB-CE8E-F4CF-842F-8671419BCB1F" name="DIM_DATE_PK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:00:54 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74F7DC26-0747-E5D5-E89F-98B915A3E56F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="25D8105C-E96B-E566-059D-DD2FB910E0E5">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:13:18 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

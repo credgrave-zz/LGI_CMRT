@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="8D2AF011-9EF3-0A03-BB1A-A322308B70B6" name="PERF_CMRT" visible="true"/>
+   <object objectType="sub_view" objectID="7353A9C6-4D19-590E-8AF8-37043929F013" name="PERF_CMRT - SubView_1" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

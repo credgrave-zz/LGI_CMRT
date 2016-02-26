@@ -1,0 +1,255 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="260483E1-CA6A-5FBA-3E53-B9AB50D51101" name="FACT_CONTENT_AVAILABILITY">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:01:42 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTENT_KEYWORD_WID" id="D87DBFBF-F9C5-48A1-59E5-1DCDD149E891">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:05:30 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB025555-AF1C-89B6-D008-23C7F1C2AFF4" referredColumn="99CDCD8F-1A6E-96EB-47BE-A01A8FFB61A3"/>
+</associations>
+</Column>
+<Column name="CONTENT_GENRE_WID" id="FA739901-A456-C053-1A38-FC630F50DB9D">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:06:25 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFCF99EE-B057-0146-3E4E-0052AC9F1BA7" referredColumn="50251FCC-AF15-12A4-D519-DA8C52B6B9D6"/>
+</associations>
+</Column>
+<Column name="CONTENT_SYNOPSIS_WID" id="0F7978C4-A848-7A6B-7945-B6FE74DE9CF4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:34 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B311761-62B5-B6A1-BEDC-FA63C7BFECAD" referredColumn="DFD7558D-3582-5309-93A2-0FD1C331AED8"/>
+</associations>
+</Column>
+<Column name="SYSTEM_WID" id="969B22BF-749E-8527-A395-F83D27954B55">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:43 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8C30936-669E-D7A0-D539-730DB956EA95" referredColumn="29265ABB-9CBD-F941-BAF0-E5B492D227A4"/>
+</associations>
+</Column>
+<Column name="CONTENT_KEYWORK_WID" id="F9B2AA8A-78D4-B00C-052F-81F98035823C">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:48 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E25F629-7E61-1D1C-D051-F35FDA4DABE2" referredColumn="67DAEEC3-AD48-E69D-D20A-8810C20FE4CF"/>
+</associations>
+</Column>
+<Column name="CONTENT_CERTIFICATION_WID" id="B851C441-0B46-6C14-C8FD-974294A7F832">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:51 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F23EA0D-40D8-A8B4-EF5C-1084AC6A5F9A" referredColumn="63996D86-5EA5-1F42-94DA-D5F66D6FCE03"/>
+</associations>
+</Column>
+<Column name="CONTENT_WID" id="38B647A0-92D0-E8AB-9731-9A5E76E20361">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:55 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BCBBBA84-3908-C8CD-6EB3-28B11F210C85" referredColumn="66328C23-97F1-264F-A5E1-93FD967F7064"/>
+</associations>
+</Column>
+<Column name="DATE_WID" id="213F5C96-A052-7D01-D833-9336E2F39927">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:58 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD1C340B-9B9C-A66C-4EE1-10402715A41D" referredColumn="74F7DC26-0747-E5D5-E89F-98B915A3E56F"/>
+</associations>
+</Column>
+<Column name="COUNTRY_WID" id="AB8D168A-85EA-AC22-8F20-BFA96D331C4A">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:08:05 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C3984BA-5DF4-2847-0963-B5F0CBA72BB5" referredColumn="6F8F7519-4533-268B-D728-219016B6388C"/>
+</associations>
+</Column>
+<Column name="EXISTS" id="625DD544-8FC8-E3F4-AC55-CF88808348FC">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:12:43 UTC</createdTime>
+<commentInRDBMS>Whether or not a given content is available on a system.</commentInRDBMS>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENT_CRID" id="FF1A8942-5474-09D3-6533-86978F37125D">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 15:28:14 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<constraintName>CONTENT_CRID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB9BAB7D-6253-0935-83B4-FFF626DF9471" name="DIM_CONTENT_KEYWORD_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:05:30 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D87DBFBF-F9C5-48A1-59E5-1DCDD149E891"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="166E70C1-D2F1-0319-53C2-B637840A8003" name="DIM_CONTENT_GENRE_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:06:25 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA739901-A456-C053-1A38-FC630F50DB9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB45F9EF-4D17-9BE4-35DE-2AF9A35D3EF4" name="DIM_CONTENT_SYNOPSIS_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:34 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F7978C4-A848-7A6B-7945-B6FE74DE9CF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36BDCF99-41BA-37D4-5B56-47AE4016B74C" name="DIM_SYSTEM_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:43 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="969B22BF-749E-8527-A395-F83D27954B55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC2CEDE8-EA12-80D4-6D9A-81ED7AC616C8" name="DIM_CONTENT_CREDITS_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:48 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9B2AA8A-78D4-B00C-052F-81F98035823C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64E9A5C7-8AF2-C72F-A3A0-AC4FA8105B03" name="DIM_CONTENT_CERTIFICATION_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:51 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B851C441-0B46-6C14-C8FD-974294A7F832"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A74BA41F-5C38-4204-FC9E-84253DED3FA0" name="DIM_CONTENT_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:55 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38B647A0-92D0-E8AB-9731-9A5E76E20361"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A67D71B0-2088-5F85-AC2C-41498C6B26A7" name="DIM_DATE_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:58 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="213F5C96-A052-7D01-D833-9336E2F39927"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98FC4EF3-A3FB-739A-9CC8-60901FCC541B" name="DIM_COUNTRY_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:08:05 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB8D168A-85EA-AC22-8F20-BFA96D331C4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

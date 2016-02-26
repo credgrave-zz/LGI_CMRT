@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIM_COUNTRY_FK" directorySegmentName="seg_0" id="BCC04905-34D1-D9BB-32B0-E13E02A4F282">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>6C3984BA-5DF4-2847-0963-B5F0CBA72BB5</generatorID>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<sourcePk>49985BD1-C121-C588-F698-67560EA5771D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3AEE6F29-C04D-4DB0-35B5-CE478A3111B5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>714C8AE2-0426-97AF-7967-65E060F2ECE3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

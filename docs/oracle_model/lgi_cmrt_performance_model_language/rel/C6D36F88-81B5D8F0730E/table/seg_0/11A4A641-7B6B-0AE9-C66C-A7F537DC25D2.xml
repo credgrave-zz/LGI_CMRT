@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11A4A641-7B6B-0AE9-C66C-A7F537DC25D2" name="BRIDGE_KEYWORD_AVAILABILITY">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-28 08:30:13 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DIM_CONTENT_KEYWORD_OBJECT_WID" id="F15E4215-5EFE-5579-F925-8968EA9D69E3">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-28 08:43:12 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A95A2F3-3508-FF66-C461-D16ABFF49E7D" referredColumn="99CDCD8F-1A6E-96EB-47BE-A01A8FFB61A3"/>
+</associations>
+</Column>
+<Column name="FACT_CONTENT_AVAILABILITY_OBJECT_WID" id="B4E0279D-2C85-B893-74D9-8917541B81E2">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-28 09:05:32 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="961C49F0-2C91-B1C2-23ED-BEC9ADDE09BA" referredColumn="3907D8DA-08ED-FFCE-BD4E-C3D23ABD116F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A5079AC-377D-E38E-7905-883C6AEB8DA4" name="BRIDGE_KEYWORD_AVAILABILITY_DIM_CONTENT_KEYWORD_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-28 08:43:12 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F15E4215-5EFE-5579-F925-8968EA9D69E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="794E4BCC-DCD7-7645-C640-D90B8EF0F7C4" name="BRIDGE_KEYWORD_AVAILABILITY_FACT_CONTENT_AVAILABILITY_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-28 09:05:32 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4E0279D-2C85-B893-74D9-8917541B81E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

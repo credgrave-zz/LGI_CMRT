@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_SYSTEM" directorySegmentName="seg_0" id="36F85025-56F9-4812-5BAA-604B11BD3DB1">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DIM_SYSTEM_ID" id="29265ABB-9CBD-F941-BAF0-E5B492D227A4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SYSTEM_NAME" id="9F622EDC-3519-23C4-1D3C-31053EE42468">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:57:21 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_SYSTEM_PK" id="0483A31F-7DE5-6F95-1F11-9DD0F5CFB2D9">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

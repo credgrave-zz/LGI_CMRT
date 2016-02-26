@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="FACT_CONTENT_AVAILABILITY" directorySegmentName="seg_0" id="260483E1-CA6A-5FBA-3E53-B9AB50D51101">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<schemaObject>23698B14-0A63-F7E3-FB97-19A3627BA8A5</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CONTENT_SYNOPSIS_WID" id="0F7978C4-A848-7A6B-7945-B6FE74DE9CF4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:34 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_WID" id="213F5C96-A052-7D01-D833-9336E2F39927">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:58 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTENT_WID" id="38B647A0-92D0-E8AB-9731-9A5E76E20361">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:55 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBJECT_WID" id="3907D8DA-08ED-FFCE-BD4E-C3D23ABD116F">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-28 09:05:25 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EXISTS" id="625DD544-8FC8-E3F4-AC55-CF88808348FC">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:12:43 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SYSTEM_WID" id="969B22BF-749E-8527-A395-F83D27954B55">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:43 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_WID" id="AB8D168A-85EA-AC22-8F20-BFA96D331C4A">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:08:05 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTENT_CERTIFICATION_WID" id="B851C441-0B46-6C14-C8FD-974294A7F832">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:51 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LANGUAGE_WID" id="E174A339-B332-3A6A-C82A-FB238D88CCA9">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 15:51:45 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTENT_GENRE_WID" id="FA739901-A456-C053-1A38-FC630F50DB9D">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:06:25 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTENT_CRID" id="FF1A8942-5474-09D3-6533-86978F37125D">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 15:28:14 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DIM_CONTENT_GENRE_FK" id="166E70C1-D2F1-0319-53C2-B637840A8003">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:06:25 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DIM_SYSTEM_FK" id="36BDCF99-41BA-37D4-5B56-47AE4016B74C">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:43 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DIM_CONTENT_CERTIFICATION_FK" id="64E9A5C7-8AF2-C72F-A3A0-AC4FA8105B03">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:51 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DIM_LANGUAGE_FK" id="88EEA87E-E034-6781-1764-0B980D6DFD1C">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 15:51:45 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DIM_COUNTRY_FK" id="98FC4EF3-A3FB-739A-9CC8-60901FCC541B">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:08:05 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DIM_DATE_FK" id="A67D71B0-2088-5F85-AC2C-41498C6B26A7">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:58 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DIM_CONTENT_FK" id="A74BA41F-5C38-4204-FC9E-84253DED3FA0">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:55 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DIM_CONTENT_SYNOPSIS_FK" id="FB45F9EF-4D17-9BE4-35DE-2AF9A35D3EF4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:07:34 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="FACT_CONTENT_AVAILABILITY_PK" id="45FA979C-4818-1CE9-06CA-928A303BE238">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-28 09:05:25 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

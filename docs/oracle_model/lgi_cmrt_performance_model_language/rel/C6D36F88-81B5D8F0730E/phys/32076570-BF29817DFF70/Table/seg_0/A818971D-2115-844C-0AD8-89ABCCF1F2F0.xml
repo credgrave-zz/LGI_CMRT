@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_LANGUAGE" directorySegmentName="seg_0" id="A818971D-2115-844C-0AD8-89ABCCF1F2F0">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 15:49:36 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LANGUAGE" id="76EC3464-C127-8F5D-5F23-6231EC5974BA">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 15:50:20 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBJECT_WID" id="8F407598-18C0-AD49-4C95-6B796ED1DF9E">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 15:50:20 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_LANGUAGE_PK" id="4A467B98-ADC9-EB82-123E-B9418AE344DF">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 15:50:20 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

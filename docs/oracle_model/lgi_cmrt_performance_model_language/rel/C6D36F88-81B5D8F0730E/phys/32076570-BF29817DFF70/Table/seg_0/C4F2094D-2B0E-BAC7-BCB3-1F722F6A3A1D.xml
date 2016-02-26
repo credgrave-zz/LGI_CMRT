@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_CONTENT_SYNOPSIS" directorySegmentName="seg_0" id="C4F2094D-2B0E-BAC7-BCB3-1F722F6A3A1D">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MEDIUM_SYNOPSIS" id="8B0FB156-E8B3-740F-BE01-7020CD1E5FCD">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:22:26 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONG_SYNOPSIS" id="AB021BEA-50C1-4320-00DD-5ADBAE356961">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:22:26 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBJECT_WID" id="DFD7558D-3582-5309-93A2-0FD1C331AED8">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SHORT_SYNOPSIS" id="E9AD9CC9-3B42-54ED-482D-049605D79970">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:22:26 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_CONTENT_SYNOPSIS_ID" id="1E3F641C-3F38-A74E-5340-18C17B0F5EB0">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

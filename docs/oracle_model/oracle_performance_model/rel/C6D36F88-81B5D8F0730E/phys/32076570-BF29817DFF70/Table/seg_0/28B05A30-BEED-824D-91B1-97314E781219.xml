@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_CONTENT_GENRE" directorySegmentName="seg_0" id="28B05A30-BEED-824D-91B1-97314E781219">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DIM_CONTENT_GENRE_ID" id="50251FCC-AF15-12A4-D519-DA8C52B6B9D6">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LANGUAGE" id="6C51F695-1739-38E9-AF3B-3338627D1E0B">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:58:53 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUB_GENRE" id="8DC88C18-2341-B476-96F7-0B0F30E315A0">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:58:40 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GENRE" id="A82ADC35-CD28-8080-0EDD-5078DD4836C3">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:58:40 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_CONTENT_GENRE_ID" id="8B51E330-8B26-0D40-F17C-B1FB5F439F4E">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

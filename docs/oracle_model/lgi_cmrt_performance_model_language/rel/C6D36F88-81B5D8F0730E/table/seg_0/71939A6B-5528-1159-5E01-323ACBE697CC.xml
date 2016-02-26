@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71939A6B-5528-1159-5E01-323ACBE697CC" schemaObject="23698B14-0A63-F7E3-FB97-19A3627BA8A5" name="DIM_CONTENT_KEYWORD">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:19:15 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECT_WID" id="99CDCD8F-1A6E-96EB-47BE-A01A8FFB61A3">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:20:33 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KEYWORDS" id="1C0DF2DA-1F95-D358-C136-2E4CFC4DB375">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:20:33 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="BF5680B0-40F7-AAB1-2F6E-E1A01F82BCEB">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:20:33 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="479C90BA-5525-69EE-9D1F-AC3BB7FABED6">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:20:33 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENT_YN" id="133E5F3A-5A93-C6FF-FECE-BF619746ED89">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:20:33 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86E2E1CE-E70A-16EC-71CF-A9BB1A05BC93" name="DIM_KEYWORD_ID">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:20:40 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99CDCD8F-1A6E-96EB-47BE-A01A8FFB61A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

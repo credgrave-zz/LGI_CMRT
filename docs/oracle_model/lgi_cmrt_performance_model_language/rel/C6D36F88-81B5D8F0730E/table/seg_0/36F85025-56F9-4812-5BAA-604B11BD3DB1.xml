@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36F85025-56F9-4812-5BAA-604B11BD3DB1" schemaObject="23698B14-0A63-F7E3-FB97-19A3627BA8A5" name="DIM_SYSTEM">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:01:23 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECT_WID" id="29265ABB-9CBD-F941-BAF0-E5B492D227A4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:01:35 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SYSTEM_NAME" id="9F622EDC-3519-23C4-1D3C-31053EE42468">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:57:21 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0483A31F-7DE5-6F95-1F11-9DD0F5CFB2D9" name="DIM_SYSTEM_PK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:01:35 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29265ABB-9CBD-F941-BAF0-E5B492D227A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

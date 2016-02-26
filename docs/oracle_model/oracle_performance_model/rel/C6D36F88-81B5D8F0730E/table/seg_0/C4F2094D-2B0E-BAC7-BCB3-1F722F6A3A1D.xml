@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4F2094D-2B0E-BAC7-BCB3-1F722F6A3A1D" name="DIM_CONTENT_SYNOPSIS">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:58:25 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECT_WID" id="DFD7558D-3582-5309-93A2-0FD1C331AED8">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:58:53 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LANGUAGE" id="27495C07-385F-D2AF-1BBD-E760EFD77AC3">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:22:26 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHORT_SYNOPSIS" id="E9AD9CC9-3B42-54ED-482D-049605D79970">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:22:26 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDIUM_SYNOPSIS" id="8B0FB156-E8B3-740F-BE01-7020CD1E5FCD">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:22:26 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONG_SYNOPSIS" id="AB021BEA-50C1-4320-00DD-5ADBAE356961">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:22:26 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E3F641C-3F38-A74E-5340-18C17B0F5EB0" name="DIM_CONTENT_SYNOPSIS_ID">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 08:58:53 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFD7558D-3582-5309-93A2-0FD1C331AED8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

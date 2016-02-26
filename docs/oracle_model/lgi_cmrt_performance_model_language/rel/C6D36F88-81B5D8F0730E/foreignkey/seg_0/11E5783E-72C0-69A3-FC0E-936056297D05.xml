@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="11E5783E-72C0-69A3-FC0E-936056297D05" containerWithKeyObject="E410E81B-6956-808E-B307-A277D2609B3C" localFKIndex="A5661FE3-CFAF-9929-58CE-B2C0DB7E3786" name="BRIDGE_CREDITS_AVAILABILITY_FACT_CONTENT_AVAILABILITY_FK">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-28 09:05:47 UTC</createdTime>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>260483E1-CA6A-5FBA-3E53-B9AB50D51101</referredTableID>
+<keyObject>45FA979C-4818-1CE9-06CA-928A303BE238</keyObject>
+<referredKeyID>45FA979C-4818-1CE9-06CA-928A303BE238</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

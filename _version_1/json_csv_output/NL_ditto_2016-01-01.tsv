@@ -1,0 +1,2 @@
+systemName	crid	request	requestTime	exist	exists_	AvailabilityTime	state	ditto_country	ditto_date
+MSS	crid://bds.tv/525682163	http://172.18.23.30/mss.svc/01/od/package/bds.tv/525682163.json	2015-10-28T09:24:08.153Z	NULL	True	4.140528715	NULL	NL	2016-01-01

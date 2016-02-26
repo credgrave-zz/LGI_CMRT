@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIM_CONTENT_KEYWORD_FK" directorySegmentName="seg_0" id="07DDCB22-EB97-6808-6B54-ED73404B2364">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 11:43:22 UTC</createdTime>
+<generatorID>CB025555-AF1C-89B6-D008-23C7F1C2AFF4</generatorID>
+<ownerDesignName>lgi_cmrt_performance_model_language</ownerDesignName>
+<engineerTo>
+<item key="C6D36F88-C9B6-38C4-8005-81B5D8F0730E" value="true"/>
+</engineerTo>
+<sourcePk>8E6FF081-0E32-F5A9-2AEB-46D957B42726</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>671C253A-A0CC-39C1-CE73-3CB3EE5DF6EA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>714C8AE2-0426-97AF-7967-65E060F2ECE3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

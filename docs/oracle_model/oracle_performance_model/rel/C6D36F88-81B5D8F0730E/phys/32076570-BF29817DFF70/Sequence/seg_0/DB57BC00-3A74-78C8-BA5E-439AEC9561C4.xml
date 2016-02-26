@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="DIM_COUNTRY_PK_SEQ" directorySegmentName="seg_0" id="DB57BC00-3A74-78C8-BA5E-439AEC9561C4">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 10:44:12 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<incrementBy>1</incrementBy>
+<order>YES</order>
+<startWith>1</startWith>
+</SequenceOraclev10g>

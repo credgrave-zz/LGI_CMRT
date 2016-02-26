@@ -1,0 +1,726 @@
+{
+    "TVA_ClassificationSchemeTable": [
+    { 
+        "_id" : "urn:tva:metadata:cs:UPCPackageTypeCS:2008", 
+        "ClassificationScheme" : {
+        "uri" : "urn:tva:metadata:cs:UPCPackageTypeCS:2008", 
+        "lang" : "nl", 
+        "Term" : [
+            {
+            "termID" : "00", 
+            "Name" : {
+                "lang" : "en-EU", 
+                "Name" : "Subscription"
+            }
+            }, 
+            {
+            "termID" : "01", 
+            "Name" : {
+                "lang" : "en-EU", 
+                "Name" : "Transactional"
+            }
+            }, 
+            {
+            "termID" : "02", 
+            "Name" : {
+                "lang" : "en-EU", 
+                "Name" : "DelayTV"
+            }
+            }, 
+            {
+            "termID" : "03", 
+            "Name" : {
+                "lang" : "en-EU", 
+                "Name" : "ChannelOnDemand"
+            }
+            }, 
+            {
+            "termID" : "04", 
+            "Name" : {
+                "lang" : "en-EU", 
+                "Name" : "Promotional"
+            }
+            }
+        ]
+        }, 
+        "_updated" : "2015-11-05T09:30:43.205+0000", 
+        "_created" : "2015-11-05T09:30:43.205+0000"
+    }
+    ],
+    "TVA_GroupInformationTable": [
+    { 
+        "_id" : "crid://upc.com/3cfccfc1-2e45-429c-b057-143970249cca", 
+        "GroupInformation" : {
+        "groupId" : "crid://upc.com/3cfccfc1-2e45-429c-b057-143970249cca", 
+        "ordered" : "true", 
+        "fragmentId" : "0000000000001000000800000002dd8e", 
+        "fragmentVersion" : 14326790190175715, 
+        "lang" : "nl", 
+        "GroupType" : {
+            "type" : "ProgramGroupTypeType", 
+            "value" : "otherCollection"
+        }, 
+        "BasicDescription" : {
+            "Title" : [
+            {
+                "lang" : "nl", 
+                "Title" : "NICKELODEON_HD"
+            }
+            ], 
+            "Genre" : [
+            {
+                "href" : "urn:eventis:metadata:cs:GroupTypeCS:2010:nodeCatalogue", 
+                "type" : "other"
+            }, 
+            {
+                "href" : "urn:nnds:metro:metadata:CategoryPropertiesCS:2010:hidden", 
+                "type" : "other", 
+                "Definition" : {
+                "lang" : "nl", 
+                "Definition" : "true"
+                }
+            }, 
+            {
+                "href" : "urn:nnds:metro:metadata:GroupTypeCS:2010:catalogueNode", 
+                "type" : "other", 
+                "Name" : {
+                "lang" : "en", 
+                "Name" : "catalogueNode"
+                }
+            }
+            ], 
+            "ParentalGuidance" : [
+            {
+                "ParentalRating" : {
+                "href" : "urn:tva:metadata:cs:UPCAgeRatingCS:2008:0", 
+                "Name" : {
+                    "lang" : "nl"
+                }
+                }
+            }, 
+            {
+                "ParentalRating" : {
+                "href" : "urn:eventis:metadata:cs:AgeCS:2010:unknown", 
+                "Name" : {
+                    "lang" : "nl", 
+                    "Name" : "Not rated"
+                }
+                }
+            }
+            ]
+        }, 
+        "MemberOf" : [
+            {
+            "type" : "MemberOfType", 
+            "crid" : "crid://upc.com/0e8cc23d-c875-488d-a1a1-c8d0342b7070", 
+            "index" : "99"
+            }
+        ], 
+        "OtherIdentifier" : [
+            {
+            "type" : "VodBackOfficeId", 
+            "organization" : "eventis", 
+            "authority" : "eventis", 
+            "OtherIdentifier" : "3cfccfc1-2e45-429c-b057-143970249cca"
+            }
+        ]
+        }, 
+        "_updated" : "2015-11-05T09:35:04.504+0000", 
+        "_created" : "2015-11-05T09:35:04.504+0000"
+    }
+    ],
+    "TVA_ProgramInformationTable": [
+    {
+        "_id" : "crid://bds.tv/525682163",
+        "_created" : "2015-10-26T14:43:52.256Z",
+        "ProgramInformation" : {
+        "programId" : "crid://bds.tv/525682163",
+        "fragmentId" : "00000000000010000004000001e5762a",
+        "fragmentVersion" : 14460025032267497,
+        "lang" : "nl",
+        "BasicDescription" : {
+            "Title" : [ 
+            {
+                "lang" : "nl",
+                "type" : "main",
+                "Title" : "De Thundermans"
+            }, 
+            {
+                "lang" : "en",
+                "type" : "main",
+                "Title" : "The Thundermans"
+            }
+            ],
+            "Synopsis" : [ 
+            {
+                "lang" : "nl",
+                "length" : "short",
+                "Synopsis" : "Jeugdserie. Phoebe en Max lijken een gewone tienertweeling, maar ze komen uit een superheldenfamilie. Phoebe gebruikt haar krachten voor het goede, Max voor het kwade."
+            }, 
+            {
+                "lang" : "en",
+                "length" : "short",
+                "Synopsis" : "Phoebe and Max seem to be regular teenage twins, but in a family of superheroes! Phoebe tries to use her powers for good, but Max embraces the dark side."
+            }, 
+            {
+                "lang" : "nl",
+                "length" : "medium",
+                "Synopsis" : "Jeugdserie. Phoebe en Max lijken een gewone tienertweeling, maar ze komen uit een superheldenfamilie. Phoebe gebruikt haar krachten voor het goede, maar Max aanvaardt zijn duistere kracht."
+            }, 
+            {
+                "lang" : "en",
+                "length" : "medium",
+                "Synopsis" : "Phoebe and Max seem to be regular teenage twins, but in a family of superheroes! Phoebe tries to use her powers for good, but Max embraces the dark side."
+            }, 
+            {
+                "lang" : "nl",
+                "length" : "long",
+                "Synopsis" : "Jeugdserie. Phoebe en Max lijken een gewone tienertweeling, maar ze komen uit een superheldenfamilie. Phoebe gebruikt haar krachten voor het goede, maar Max aanvaardt zijn duistere kracht."
+            }, 
+            {
+                "lang" : "en",
+                "length" : "long",
+                "Synopsis" : "Phoebe and Max seem to be regular teenage twins, but in a family of superheroes! Phoebe tries to use her powers for good, but Max embraces the dark side."
+            }
+            ],
+            "Keyword" : [ 
+            {
+                "lang" : "en",
+                "type" : "other",
+                "Keyword" : "Programme Type (one per asset::Sitcom"
+            }, 
+            {
+                "lang" : "en",
+                "type" : "other",
+                "Keyword" : "Subgenres::Superhero"
+            }
+            ],
+            "Genre" : [ 
+            {
+                "href" : "urn:tva:metadata:cs:UPCEventGenreCS:2009:52",
+                "type" : "main",
+                "Name" : {
+                "lang" : "en",
+                "Name" : "For ages 6-14"
+                }
+            }, 
+            {
+                "href" : "urn:libertyglobal:metadata:cs:ContentCS:2014_1:3",
+                "type" : "other",
+                "Name" : {
+                "lang" : "en",
+                "Name" : "Children's"
+                }
+            }
+            ],
+            "ParentalGuidance" : [ 
+            {
+                "ParentalRating" : {
+                "href" : "urn:tva:metadata:cs:UPCAgeRatingCS:2008:3"
+                }
+            }
+            ],
+            "Language" : [ 
+            "EN"
+            ],
+            "CreditsList" : {
+            "CreditsItem" : [ 
+                {
+                "role" : "urn:mpeg:mpeg7:cs:RoleCS:2001:ACTOR",
+                "index" : "1",
+                "PersonName" : {
+                    "lang" : "nl",
+                    "GivenName" : {
+                    "lang" : "nl",
+                    "GivenName" : "Rosa"
+                    },
+                    "FamilyName" : {
+                    "lang" : "nl",
+                    "FamilyName" : "Blasi"
+                    }
+                },
+                "PresentationRole" : "Barb Thunderman"
+                }, 
+                {
+                "role" : "urn:mpeg:mpeg7:cs:RoleCS:2001:ACTOR",
+                "index" : "2",
+                "PersonName" : {
+                    "lang" : "nl",
+                    "GivenName" : {
+                    "lang" : "nl",
+                    "GivenName" : "Chris"
+                    },
+                    "FamilyName" : {
+                    "lang" : "nl",
+                    "FamilyName" : "Tallman"
+                    }
+                },
+                "PresentationRole" : "Hank Thunderman"
+                }, 
+                {
+                "role" : "urn:mpeg:mpeg7:cs:RoleCS:2001:ACTOR",
+                "index" : "3",
+                "PersonName" : {
+                    "lang" : "nl",
+                    "GivenName" : {
+                    "lang" : "nl",
+                    "GivenName" : "Kira"
+                    },
+                    "FamilyName" : {
+                    "lang" : "nl",
+                    "FamilyName" : "Kosarin"
+                    }
+                },
+                "PresentationRole" : "Phoebe Thunderman"
+                }, 
+                {
+                "role" : "urn:mpeg:mpeg7:cs:RoleCS:2001:ACTOR",
+                "index" : "4",
+                "PersonName" : {
+                    "lang" : "nl",
+                    "GivenName" : {
+                    "lang" : "nl",
+                    "GivenName" : "Jack"
+                    },
+                    "FamilyName" : {
+                    "lang" : "nl",
+                    "FamilyName" : "Griffo"
+                    }
+                },
+                "PresentationRole" : "Max Thunderman"
+                }, 
+                {
+                "role" : "urn:mpeg:mpeg7:cs:RoleCS:2001:ACTOR",
+                "index" : "5",
+                "PersonName" : {
+                    "lang" : "nl",
+                    "GivenName" : {
+                    "lang" : "nl",
+                    "GivenName" : "Addison"
+                    },
+                    "FamilyName" : {
+                    "lang" : "nl",
+                    "FamilyName" : "Riecke"
+                    }
+                },
+                "PresentationRole" : "Nora Thunderman"
+                }
+            ]
+            },
+            "RelatedMaterial" : [ 
+            {
+                "HowRelated" : {
+                "href" : "urn:eventis:metadata:cs:HowRelatedCS:2010:boxCover",
+                "Name" : {
+                    "lang" : "nl",
+                    "Name" : "boxcover"
+                }
+                },
+                "MediaLocator" : {
+                "MediaUri" : "http://212.142.41.211/EventImages/113660626.p.b5144114bf94b9d8609dc471016b5da30f0cfdfc.jpg"
+                }
+            }
+            ],
+            "ProductionLocation" : [ 
+            "US"
+            ]
+        },
+        "OtherIdentifier" : [ 
+            {
+            "type" : "objectid",
+            "organization" : "RBM",
+            "authority" : "RBM",
+            "OtherIdentifier" : "100525682163"
+            }, 
+            {
+            "type" : "VodBackOfficeId",
+            "organization" : "eventis",
+            "authority" : "eventis",
+            "OtherIdentifier" : "da947491-4bfd-42af-877a-f84f38fcd4b5"
+            }, 
+            {
+            "type" : "IngestedCRID",
+            "organization" : "eventis",
+            "authority" : "eventis",
+            "OtherIdentifier" : "crid://bds.tv/525682163"
+            }
+        ],
+        "MemberOf" : [ 
+            {
+            "type" : "MemberOfType",
+            "crid" : "crid://upc.com/3cfccfc1-2e45-429c-b057-143970249cca",
+            "index" : "491"
+            }
+        ],
+        "EpisodeOf" : {
+            "crid" : "crid://bds.tv/s113660626",
+            "index" : "525682163"
+        }
+        },
+        "_updated" : "2015-10-28T09:02:35.750Z"
+    }
+    ],
+    "TVA_BroadcastEventTable": [
+    {
+        "_id" : "crid://bds.tv/525682163_imi:af5d008462c4ea99c0f0d914252630d1",
+        "_created" : "2015-10-26T14:58:41.939Z",
+        "BroadcastEvent" : {
+        "lang" : "nl",
+        "serviceIDRef" : "Nickelodeon_HD",
+        "fragmentId" : "000000000000100000240000000a5b86",
+        "fragmentVersion" : 14458325041475278,
+        "Program" : {
+            "crid" : "crid://bds.tv/525682163"
+        },
+        "ProgramURL" : "dvb://0000.0000.0000;0000~20151028T092000Z--PT30M",
+        "InstanceMetadataId" : "imi:af5d008462c4ea99c0f0d914252630d1",
+        "InstanceDescription" : {
+            "Genre" : [ 
+            {
+                "href" : "urn:eventis:metadata:cs:PropertyCS:2010:quotaUnits",
+                "type" : "other",
+                "Definition" : {
+                "lang" : "nl",
+                "Definition" : "1"
+                }
+            }, 
+            {
+                "href" : "urn:eventis:metadata:cs:BroadcastEventTypeCS:2010:TSTV",
+                "type" : "other"
+            }
+            ],
+            "OtherIdentifier" : [ 
+            {
+                "type" : "VodBackOfficeId",
+                "organization" : "eventis",
+                "authority" : "eventis",
+                "OtherIdentifier" : "7abc7c7d-8edd-4a63-ad9c-449cd390f5b7"
+            }, 
+            {
+                "type" : "IngestedCRID",
+                "organization" : "eventis",
+                "authority" : "eventis",
+                "OtherIdentifier" : "crid://bds.tv/525682163"
+            }
+            ],
+            "RelatedMaterial" : [ 
+            {
+                "HowRelated" : {
+                "href" : "urn:tva:metadata:cs:HowRelatedCS:2010:16"
+                },
+                "MediaLocator" : {
+                "MediaUri" : "imi:00100000003B1027"
+                }
+            }
+            ]
+        },
+        "PublishedStartTime" : "2015-10-28T09:20:00.000Z",
+        "PublishedEndTime" : "2015-10-28T09:50:00.000Z",
+        "PublishedDuration" : "PT30M"
+        },
+        "_updated" : "2015-10-26T14:58:41.939Z"
+    }
+    ],
+    "TVA_OnDemandProgramTable": [
+    {
+        "_id" : "crid://bds.tv/525682163_imi:379fd528f4e74197d8dd4a9ec4717f04",
+        "_created" : "2015-10-26T15:03:19.341Z",
+        "OnDemandProgram" : {
+        "fragmentId" : "00000000000010000020000000513d70",
+        "fragmentVersion" : 14458325041475278,
+        "lang" : "nl",
+        "Program" : {
+            "crid" : "crid://bds.tv/525682163"
+        },
+        "ProgramURL" : "vod://0a64a45f095d498dbd6a2285c256a74e/7abc7c7d8edd4a63ad9c449cd390f5b7",
+        "InstanceMetadataId" : "imi:379fd528f4e74197d8dd4a9ec4717f04",
+        "InstanceDescription" : {
+            "Genre" : [ 
+            {
+                "href" : "urn:eventis:metadata:cs:PropertyCS:2010:profile",
+                "type" : "other",
+                "Definition" : {
+                "lang" : "nl",
+                "Definition" : "TSTV-Cable"
+                }
+            }, 
+            {
+                "href" : "urn:tva:metadata:cs:ODPType:UPCInstanceODP",
+                "type" : "other"
+            }
+            ],
+            "PurchaseList" : [ 
+            {
+                "PurchaseItem" : {
+                "start" : "2015-10-28T09:20:00Z",
+                "end" : "2015-11-04T09:20:00Z",
+                "Price" : {
+                    "currency" : "EUR",
+                    "Price" : "0"
+                },
+                "Purchase" : [ 
+                    {
+                    "PurchaseType" : {
+                        "href" : "urn:eventis:metadata:cs:PurchaseTypeCS:2010:availabilityWindow"
+                    }
+                    }, 
+                    {
+                    "PurchaseType" : {
+                        "href" : "urn:eventis:metadata:cs:PurchaseTypeCS:2010:productCrid",
+                        "Definition" : "crid://upc.com/SR_VIACOM/SR_Nickelodeon_HD"
+                    }
+                    }, 
+                    {
+                    "PurchaseType" : {
+                        "href" : "urn:eventis:metadata:cs:TstvModelCS:2010:delayTV",
+                        "Definition" : "imi:af5d008462c4ea99c0f0d914252630d1"
+                    }
+                    }
+                ]
+                }
+            }
+            ],
+            "AVAttributes" : {
+            "BitRate" : [ 
+                {
+                "maximum" : "6000000",
+                "BitRate" : "6000000"
+                }
+            ],
+            "VideoAttributes" : {
+                "HorizontalSize" : "1280"
+            }
+            },
+            "MemberOf" : [ 
+            {
+                "type" : "MemberOfType",
+                "crid" : "crid://upc.com/SR_VIACOM/SR_Nickelodeon_HD"
+            }
+            ],
+            "OtherIdentifier" : [ 
+            {
+                "type" : "VodBackOfficeId",
+                "organization" : "eventis",
+                "authority" : "eventis",
+                "OtherIdentifier" : "7abc7c7d-8edd-4a63-ad9c-449cd390f5b7"
+            }, 
+            {
+                "type" : "IngestedCRID",
+                "organization" : "eventis",
+                "authority" : "eventis",
+                "OtherIdentifier" : "crid://bds.tv/525682163"
+            }, 
+            {
+                "type" : "IngestedIMI",
+                "organization" : "eventis",
+                "authority" : "eventis",
+                "OtherIdentifier" : "imi:00100000003B1027"
+            }, 
+            {
+                "type" : "DasId",
+                "organization" : "eventis",
+                "authority" : "eventis",
+                "OtherIdentifier" : "1722360|view"
+            }
+            ]
+        },
+        "PublishedDuration" : "PT30M",
+        "StartOfAvailability" : "2015-10-28T09:20:00.000Z",
+        "EndOfAvailability" : "2015-11-04T09:20:00.000Z"
+        },
+        "_updated" : "2015-10-28T09:26:12.880Z",
+        "_MSS" : {
+        "available" : {
+            "requestTime" : "2015-10-28T09:24:08.153Z",
+            "exists" : true
+        },
+        "request" : "http://172.18.23.30/mss.svc/01/od/package/bds.tv/525682163.json",
+        "AvailabilityTime" : 4.140528715
+        },
+        "_TRAXIS" : {
+        "available" : {
+            "requestTime" : "2015-10-28T09:20:07.593Z",
+            "exists" : true
+        },
+        "request" : "http://172.27.70.70/TRAXIS/web/Title/crid:~~2F~~2Fbds.tv~~2F525682163/Props/Contents,Pictures,ContentCount,IsViewableOnCpe,IsPreview,IsFeature,CategoryCount,ContentCount,EventCount,FeatureCount,PreviewCount,GroupCount,SeriesCount,PreviewOfProductCount?Output=Json",
+        "AvailabilityTime" : 0.13338023985
+        },
+        "_CMDC" : {
+        "available" : {
+            "requestTime" : "2015-10-28T09:20:09.410Z",
+            "exists" : true
+        },
+        "request" : "http://localhost:8011/cmdc/client/1795943361~8245096_nl_0~8245096_nl/content/crid%3A%2F%2Fbds.tv%2F525682163?contentSize=standard&product=default",
+        "AvailabilityTime" : 0.1610667356833333
+        },
+        "_RENG" : {
+        "available" : {
+            "requestTime" : "2015-10-28T09:20:13.166Z",
+            "exists" : true
+        },
+        "request" : "http://172.27.65.189:8080/RE/REController.do?method=getContextRecommendation&subscriberId=8245096_nl_0&clientType=103&contentItemId=crid%3A%2F%2Fbds.tv%2F525682163&contentSourceId=2&numRecommendations=1&applyMarketingBias=true&filterTimeWindow=1446024013&filterTimeWindow=1446283213&filterVodAvailableNow=true&allowPreviousRecommendations=true",
+        "AvailabilityTime" : 0.2231924280166667
+        },
+        "_SMARTREC" : {
+        "available" : {
+            "exists" : 1,
+            "recheck" : true,
+            "requestTime" : "2015-10-28T09:26:12.686Z",
+            "exist" : true,
+            "state" : 0
+        },
+        "request" : "http://172.27.66.151:5929/get_asset_properties?external_id=7abc7c7d-8edd-4a63-ad9c-449cd390f5b7"
+        }
+    }
+    ],
+    "TVA_ServiceInformationTable": [
+    { 
+        "_id" : "FOX_Sports_6_HD_PPV", 
+        "ServiceInformation" : {
+        "serviceId" : "FOX_Sports_6_HD_PPV", 
+        "fragmentId" : "0000000000001000000c00000000791e", 
+        "fragmentVersion" : 14454350934788704, 
+        "Name" : [
+            "FS 6 Int PPV HD"
+        ], 
+        "ServiceGenre" : [
+            {
+            "href" : "urn:eventis:metadata:cs:DVBServiceType:2011:04", 
+            "type" : "other"
+            }
+        ], 
+        "RelatedMaterial" : [
+            {
+            "HowRelated" : {
+                "href" : "urn:eventis:metadata:cs:LogoTypeCS:2010:nonfocused"
+            }, 
+            "Format" : {
+                "href" : "urn:mpeg:mpeg7:cs:FileFormatCS:2001:15"
+            }, 
+            "MediaLocator" : {
+                "MediaUri" : "http://212.142.41.211/ChannelLogos/01/ziggo_live_events_1.png"
+            }
+            }, 
+            {
+            "HowRelated" : {
+                "href" : "urn:eventis:metadata:cs:LogoTypeCS:2010:focused"
+            }, 
+            "Format" : {
+                "href" : "urn:mpeg:mpeg7:cs:FileFormatCS:2001:15"
+            }, 
+            "MediaLocator" : {
+                "MediaUri" : "http://212.142.41.211/ChannelLogos/02/ziggo_live_events_1.png"
+            }
+            }
+        ], 
+        "PurchaseList" : [
+            {
+            "PurchaseItem" : [
+                {
+                "Price" : [
+                    {
+                    "currency" : "EUR", 
+                    "Price" : "0"
+                    }
+                ], 
+                "Purchase" : [
+                    {
+                    "PurchaseType" : [
+                        {
+                        "href" : "urn:eventis:metadata:cs:PurchaseTypeCS:2010:accessCriteria", 
+                        "Name" : "Access criteria"
+                        }
+                    ]
+                    }
+                ], 
+                "DRMDeclaration" : {
+                    "LicenseExpression" : "18010000:descriptor:860679111C2700FC;18500000:descriptor:a50a08000002780000000000;18500000:descriptor:a315027813080002185083075BCD150A21FE852E5BF271;18500000:casproductid:123456789;18500000:casproductid:777777777;18500000:casproductid:170000005"
+                }
+                }
+            ]
+            }
+        ]
+        }, 
+        "_updated" : "2015-11-05T09:44:22.470+0000", 
+        "_created" : "2015-11-05T09:44:22.470+0000"
+    }
+    ],
+    "TVA_ScheduleEventTable": [
+    {
+        "_id" : "crid://bds.tv/525682163_imi:00100000003B1027",
+        "_created" : "2015-10-26T14:56:27.499Z",
+        "ScheduleEvent" : {
+        "lang" : "nl",
+        "Program" : {
+            "crid" : "crid://bds.tv/525682163"
+        },
+        "ProgramURL" : "dvb://0600.0807.4a66;2254~20151028T092000Z--PT30M",
+        "InstanceMetadataId" : "imi:00100000003B1027",
+        "InstanceDescription" : {
+            "AVAttributes" : {
+            "VideoAttributes" : {
+                "Coding" : {
+                "href" : "urn:mpeg:mpeg7:cs:VisualCodingFormatCS:2001:3"
+                },
+                "HorizontalSize" : "1280",
+                "VerticalSize" : "720",
+                "AspectRatio" : "16:9",
+                "FrameRate" : "25"
+            }
+            },
+            "OtherIdentifier" : [ 
+            {
+                "type" : "objectid",
+                "organization" : "RBM",
+                "authority" : "RBM",
+                "OtherIdentifier" : "350525682163"
+            }, 
+            {
+                "type" : "urn:eventis:metadata:cs:DVBEventId:2011",
+                "organization" : "eventis",
+                "authority" : "eventis",
+                "OtherIdentifier" : "8788"
+            }
+            ]
+        },
+        "PublishedStartTime" : "2015-10-28T09:20:00.000Z",
+        "PublishedEndTime" : "2015-10-28T09:50:00.000Z",
+        "PublishedDuration" : "PT30M",
+        "serviceIDRef" : "Nickelodeon_HD"
+        },
+        "_updated" : "2015-10-28T09:19:14.552Z",
+        "_OESP" : {
+        "available" : {
+            "requestTime" : "2015-10-28T09:19:08.655Z",
+            "exists" : true
+        },
+        "request" : "https://web-api2.horizon.tv/oesp/api/NL/nld/web/listings/crid:~~2F~~2Fbds.tv~~2F525682163-imi:00100000003B1027",
+        "AvailabilityTime" : 0
+        },
+        "_CMDC" : {
+        "available" : {
+            "requestTime" : "2015-10-28T09:19:09.047Z",
+            "exists" : true
+        },
+        "request" : "http://172.27.65.183:9090/cmdc/client/1795943361~8245096_nl_0~8245096_nl/content/crid%3A%2F%2Fbds.tv%2F525682163?contentSize=standard&product=default",
+        "AvailabilityTime" : 0
+        },
+        "_MSS" : {
+        "available" : {
+            "requestTime" : "2015-10-28T09:19:09.082Z",
+            "exists" : true
+        },
+        "request" : "http://172.18.23.30/mss.svc/01/listings/0600.0807.4a66/2015-10-28T09.20.00Z/PT30M.json",
+        "AvailabilityTime" : 0
+        },
+        "_RENG" : {
+        "available" : {
+            "requestTime" : "2015-10-28T09:19:14.107Z",
+            "exists" : true
+        },
+        "request" : "http://172.27.65.189:8080/RE/REController.do?method=getContextRecommendation&subscriberId=8245096_nl_0&clientType=203&contentItemId=crid%3A%2F%2Fbds.tv%2F525682163&contentSourceId=1&numRecommendations=1&applyMarketingBias=true&allowPreviousRecommendations=true",
+        "AvailabilityTime" : 0
+        }
+    }
+    ]
+}

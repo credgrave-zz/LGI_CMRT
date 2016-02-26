@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DIM_CONTENT_CERTIFICATION" directorySegmentName="seg_0" id="43DB6DFD-100E-E35C-EF65-B193CEA27F28">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DIM_CONTENT_CERTIFICATION_ID" id="63996D86-5EA5-1F42-94DA-D5F66D6FCE03">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LANGUAGE" id="AC54465E-429A-32E6-A638-86767971F1AF">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:19:06 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CERTIFICATION" id="D1387109-A484-D661-192C-2846860F9568">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:19:06 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DIM_CONTENT_CERTIFICATION_ID" id="1270354B-4303-011C-C850-91B907010490">
+<createdBy>ChrisRedgrave</createdBy>
+<createdTime>2016-01-27 09:02:10 UTC</createdTime>
+<ownerDesignName>oracle_performance_model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

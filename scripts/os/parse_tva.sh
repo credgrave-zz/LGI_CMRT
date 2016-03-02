@@ -208,7 +208,8 @@ echo "Cleaning Up Files from the Data Directory"
 rm -rf $local_data/*.csv 
 rm -rf $local_data/${country}
 rm -rf $local_data/*.json
-rm -rf $local_data/CMRT.${country}.completed
+#rm -rf $local_data/CMRT.${country}.completed
+rm -rf *.csv.zip
 
 exit
 

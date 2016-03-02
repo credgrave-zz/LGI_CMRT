@@ -369,7 +369,7 @@ for ProgramInformation in ProgramInformationTable:
 #	Parsing Credits Data to File
 #
 ################################################
-creditsWriter = csv.writer(open(outfile_path + '/CMRT_content_credits_' + country + '_' + process_date + '.csv', 'w'),delimiter='|')
+creditsWriter = csv.writer(open(outfile_path + '/CMRT_content_credits_' + country + '_' + process_date + '.csv', 'w'),delimiter='|', lineterminator='\f')
 
 #create a list with headings for our columns
 headers = 	[ 'crid'
@@ -428,7 +428,7 @@ for ProgramInformation in ProgramInformationTable:
 						creditRow.append(language.encode('utf8'))
 						creditRow.append(ifnull(given_name,'').encode('utf8'))
 						creditRow.append(ifnull(family_name,'').encode('utf8'))
-						creditRow.append(ifnull(presentation_role,'').rstrip('\r\n').encode('utf8'))
+						creditRow.append(ifnull(presentation_role,'').replace('\n','').replace('\r','').encode('utf8'))
 						creditRow.append(country)
 						creditRow.append(process_date)
 						

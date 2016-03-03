@@ -369,7 +369,7 @@ for ProgramInformation in ProgramInformationTable:
 #	Parsing Credits Data to File
 #
 ################################################
-creditsWriter = csv.writer(open(outfile_path + '/CMRT_content_credits_' + country + '_' + process_date + '.csv', 'w'),delimiter='|', lineterminator='\f')
+creditsWriter = csv.writer(open(outfile_path + '/CMRT_content_credits_' + country + '_' + process_date + '.csv', 'w'),delimiter='|')
 
 #create a list with headings for our columns
 headers = 	[ 'crid'

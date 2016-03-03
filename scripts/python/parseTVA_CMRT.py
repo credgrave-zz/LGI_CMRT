@@ -411,8 +411,11 @@ for ProgramInformation in ProgramInformationTable:
 						for credit in creditItem:
 
 							if credit.tag == '{urn:tva:metadata:2010}PersonName':
+								
+								language = credit.attrib.get("{http://www.w3.org/XML/1998/namespace}lang")
+
 								for person in credit:
-									
+
 									if person.tag == '{urn:tva:mpeg7:2008}FamilyName':
 										family_name = person.text
 									elif person.tag == '{urn:tva:mpeg7:2008}GivenName':

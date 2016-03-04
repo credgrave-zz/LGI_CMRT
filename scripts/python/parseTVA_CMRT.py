@@ -445,8 +445,8 @@ for ProgramInformation in ProgramInformationTable:
 #	Parsing Synopsis Data to File
 #
 ################################################
-synopsisWriter = csv.writer(open(outfile_path + '/CMRT_content_synopsis_' + country + '_' + process_date + '.csv', 'w'),delimiter='|', lineterminator='\f')
-
+#synopsisWriter = csv.writer(open(outfile_path + '/CMRT_content_synopsis_' + country + '_' + process_date + '.csv', 'w'),delimiter='|', lineterminator='\f')
+synopsisWriter = csv.writer(open(outfile_path + '/CMRT_content_synopsis_' + country + '_' + process_date + '.csv', 'w'),delimiter='|')
 #create a list with headings for our columns
 headers = 	[ 'crid'
 			, 'language'
@@ -482,7 +482,7 @@ for ProgramInformation in ProgramInformationTable:
 					synopsisRow.append(episode_crid.encode('utf8'))
 					synopsisRow.append(synop_language)
 					synopsisRow.append(ifnull(synopsis_type,'').encode('utf8'))
-					synopsisRow.append(ifnull(synopsis,'').encode('utf8'))
+					synopsisRow.append(ifnull(synopsis,'').replace('\n','').replace('\r','').encode('utf8'))
 					synopsisRow.append(country)
 					synopsisRow.append(process_date)
 

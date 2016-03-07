@@ -104,6 +104,7 @@ headers = 	[ 'crid'
 			, 'type'
 			, 'episodeNumber'
 			, 'parent_crid'
+			, 'hasMemberOf'
 			, 'language'
 			, 'country'
 			, 'process_date'
@@ -128,12 +129,17 @@ for ProgramInformation in ProgramInformationTable:
 
 	if ProgramInformation.tag == "{%s}ProgramInformation" % (rootNS): 
 		episode_crid = ProgramInformation.attrib.get('programId') #Episode Crid
-	
+		
+		hasMemberOf = 0
+
 		for basicDescription in ProgramInformation:
 				
 			if basicDescription.tag == '{urn:tva:metadata:2010}EpisodeOf':
 				series_crid = basicDescription.attrib.get('crid') # Series Crid
 				episode_number = basicDescription.attrib.get('index') #Episode Number
+
+			if basicDescription.tag == '{urn:tva:metadata:2010}MemberOf':
+				hasMemberOf = 1
 
 		for basicDescription in ProgramInformation:
 			
@@ -156,6 +162,7 @@ for ProgramInformation in ProgramInformationTable:
 						episodeTitleRow.append('episode') # Type of Content
 						episodeTitleRow.append(ifnull(episode_number,'').encode('utf8'))
 						episodeTitleRow.append(ifnull(series_crid,'').encode('utf8'))
+						episodeTitleRow.append(hasMemberOf)
 						episodeTitleRow.append(episode_language)
 						episodeTitleRow.append(country)
 						episodeTitleRow.append(process_date)
@@ -173,6 +180,7 @@ for ProgramInformation in ProgramInformationTable:
 						episodeTitleRow.append('episode') # Type of Content
 						episodeTitleRow.append(ifnull(episode_number,'').encode('utf8'))
 						episodeTitleRow.append(ifnull(series_crid,'').encode('utf8'))
+						episodeTitleRow.append(hasMemberOf)
 						episodeTitleRow.append(episode_language)
 						episodeTitleRow.append(country)
 						episodeTitleRow.append(process_date)
@@ -221,6 +229,7 @@ for groupInformation in groupInformationTable:
 					groupTitleRow.append(content_type) # Type of Content
 					groupTitleRow.append(ifnull(series_number,'')) # Series Number
 					groupTitleRow.append(parent_crid)
+					groupTitleRow.append('')
 					groupTitleRow.append(language)
 					groupTitleRow.append(country)
 					groupTitleRow.append(process_date)
@@ -625,3 +634,57 @@ for ProgramInformation in ProgramInformationTable:
 					studio = ''
 					channel_name = ''
 					broadcaster=''
+
+################################################
+#
+#	Parsing Schedule Data to File
+#
+################################################
+scheduleWriter = csv.writer(open(outfile_path + '/CMRT_content_schedule_' + country + '_' + process_date + '.csv', 'w'),delimiter='|')
+
+#create a list with headings for our columns
+headers = 	[ 'crid'
+			, 'startTime'
+			, 'endTime'
+			, 'country'
+			, 'process_date'
+			]
+
+# Write the row of headings to our CSV file
+scheduleWriter.writerow(headers)
+scheduleRow = []
+search_string = "{%s}ProgramDescription/{%s}ProgramLocationTable" % (rootNS,rootNS)   
+ProgramScheduleTable = tree.getroot().find(search_string)
+
+for ProgramSchedule in ProgramScheduleTable:
+	
+	if ProgramSchedule.tag == '{urn:tva:metadata:2010}BroadcastEvent':
+		
+		for scheduleAttributes in ProgramSchedule:
+
+			if scheduleAttributes.tag == '{urn:tva:metadata:2010}Program':
+				
+				scheduleCrid = ''
+				scheduleCrid = scheduleAttributes.attrib.get("crid")
+				print 'Crid= ' + scheduleCrid
+
+			if scheduleAttributes.tag == '{urn:tva:metadata:2010}PublishedStartTime':
+				
+				scheduleStartTime = ''
+				scheduleStartTime = scheduleAttributes.text
+				print 'StartTime = ' + scheduleStartTime
+			
+			if scheduleAttributes.tag == '{urn:tva:metadata:2010}PublishedEndTime':
+				
+				scheduleEndTime = ''
+				scheduleEndTime = scheduleAttributes.text
+				print 'EndTime = ' + scheduleEndTime
+
+		scheduleRow.append(scheduleCrid)
+		scheduleRow.append(scheduleStartTime)	
+		scheduleRow.append(scheduleEndTime)
+		scheduleRow.append(country)
+		scheduleRow.append(process_date)	
+
+		scheduleWriter.writerow(scheduleRow)
+		scheduleRow = []

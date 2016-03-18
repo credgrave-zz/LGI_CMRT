@@ -659,30 +659,28 @@ ProgramScheduleTable = tree.getroot().find(search_string)
 for ProgramSchedule in ProgramScheduleTable:
 	
 	if ProgramSchedule.tag == '{urn:tva:metadata:2010}BroadcastEvent':
+		scheduleCrid = ''
+		scheduleStartTime = ''
+		scheduleEndTime = ''
 		
 		for scheduleAttributes in ProgramSchedule:
+	
 
 			if scheduleAttributes.tag == '{urn:tva:metadata:2010}Program':
 				
-				scheduleCrid = ''
 				scheduleCrid = scheduleAttributes.attrib.get("crid")
-				print 'Crid= ' + scheduleCrid
 
 			if scheduleAttributes.tag == '{urn:tva:metadata:2010}PublishedStartTime':
 				
-				scheduleStartTime = ''
 				scheduleStartTime = scheduleAttributes.text
-				print 'StartTime = ' + scheduleStartTime
-			
+
 			if scheduleAttributes.tag == '{urn:tva:metadata:2010}PublishedEndTime':
 				
-				scheduleEndTime = ''
 				scheduleEndTime = scheduleAttributes.text
-				print 'EndTime = ' + scheduleEndTime
 
 		scheduleRow.append(scheduleCrid)
-		scheduleRow.append(scheduleStartTime)	
-		scheduleRow.append(scheduleEndTime)
+		scheduleRow.append(ifnull(scheduleStartTime,''))	
+		scheduleRow.append(ifnull(scheduleEndTime,''))
 		scheduleRow.append(country)
 		scheduleRow.append(process_date)	
 

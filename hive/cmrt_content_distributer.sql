@@ -1,9 +1,10 @@
 CREATE EXTERNAL TABLE cmrt.cmrt_content_distributer
 (
 	crid 				string
+,	studio				string	
 ,	broadcaster			string
 , 	channel_name		string
-, 	language 			string
+, 	lang	 			string
 , 	country 			string
 , 	process_date 		string
 )

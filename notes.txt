@@ -1,0 +1,246 @@
+./parse_CMRT.sh NL 2016-03-08
+./parse_CMRT.sh NL 2016-03-09
+./parse_CMRT.sh NL 2016-03-10
+./parse_CMRT.sh NL 2016-03-11
+./parse_CMRT.sh NL 2016-03-12
+./parse_CMRT.sh NL 2016-03-13
+./parse_CMRT.sh NL 2016-03-14
+./parse_CMRT.sh NL 2016-03-15
+
+
+
+
+
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=NL/file_process_date=2016-03-08/CMRT_ditto_content_availability_NL_2016-03-08.csv /home/bigdata/group/videorep/cmrt/data/availability
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=NL/file_process_date=2016-03-09/CMRT_ditto_content_availability_NL_2016-03-09.csv /home/bigdata/group/videorep/cmrt/data/availability
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=NL/file_process_date=2016-03-10/CMRT_ditto_content_availability_NL_2016-03-10.csv /home/bigdata/group/videorep/cmrt/data/availability
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=NL/file_process_date=2016-03-11/CMRT_ditto_content_availability_NL_2016-03-11.csv /home/bigdata/group/videorep/cmrt/data/availability
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=NL/file_process_date=2016-03-12/CMRT_ditto_content_availability_NL_2016-03-12.csv /home/bigdata/group/videorep/cmrt/data/availability
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=NL/file_process_date=2016-03-13/CMRT_ditto_content_availability_NL_2016-03-13.csv /home/bigdata/group/videorep/cmrt/data/availability
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=NL/file_process_date=2016-03-14/CMRT_ditto_content_availability_NL_2016-03-14.csv /home/bigdata/group/videorep/cmrt/data/availability
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=NL/file_process_date=2016-03-15/CMRT_ditto_content_availability_NL_2016-03-15.csv /home/bigdata/group/videorep/cmrt/data/availability
+
+
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=NL/file_process_date=2016-03-23/CMRT_ditto_content_availability_NL_2016-03-23.csv /home/bigdata/group/videorep/cmrt/data/availability
+
+
+
+
+zip CMRT_NL_2016-03-08.zip *NL_2016-03-08.csv
+zip CMRT_NL_2016-03-09.zip *NL_2016-03-09.csv
+zip CMRT_NL_2016-03-10.zip *NL_2016-03-19.csv
+zip CMRT_NL_2016-03-11.zip *NL_2016-03-11.csv
+zip CMRT_NL_2016-03-12.zip *NL_2016-03-12.csv
+zip CMRT_NL_2016-03-13.zip *NL_2016-03-13.csv
+zip CMRT_NL_2016-03-14.zip *NL_2016-03-14.csv
+zip CMRT_NL_2016-03-15.zip *NL_2016-03-15.csv
+
+
+wget http://nl-ditto.chello.com/NL_ditto_2016_03_15.json -P /home/bigdata/group/videorep/cmrt/data
+
+
+
+
+
+CMRT_DAY
+CMRT_MONTH
+
+
+CMRT_MONTH_DAY
+ @{CMRT_MONTH_DAY}
+
+Day = Results
+Month = No Results
+
+
+"Date"."Calendar month year"
+
+
+
+./parse_CMRTGenreOnly.sh NL 2016-03-17
+./parse_CMRTGenreOnly.sh NL 2016-03-18
+./parse_CMRTGenreOnly.sh NL 2016-03-19
+./parse_CMRTGenreOnly.sh NL 2016-03-20
+./parse_CMRTGenreOnly.sh NL 2016-03-21
+./parse_CMRTGenreOnly.sh NL 2016-03-22
+sftp cmrt@172.16.78.38 <<< "put /home/bigdata/group/videorep/cmrt/data/CMRT_content_genre_NL_2016-03-17.csv"
+sftp cmrt@172.16.78.38 <<< "put /home/bigdata/group/videorep/cmrt/data/CMRT_content_genre_NL_2016-03-18.csv"
+sftp cmrt@172.16.78.38 <<< "put /home/bigdata/group/videorep/cmrt/data/CMRT_content_genre_NL_2016-03-19.csv"
+sftp cmrt@172.16.78.38 <<< "put /home/bigdata/group/videorep/cmrt/data/CMRT_content_genre_NL_2016-03-20.csv"
+sftp cmrt@172.16.78.38 <<< "put /home/bigdata/group/videorep/cmrt/data/CMRT_content_genre_NL_2016-03-21.csv"
+sftp cmrt@172.16.78.38 <<< "put /home/bigdata/group/videorep/cmrt/data/CMRT_content_genre_NL_2016-03-22.csv"
+
+
+
+./parse_CMRTGenreOnly.sh NL 2016-03-22
+sftp cmrt@172.16.78.38 <<< "put /home/bigdata/group/videorep/cmrt/data/CMRT_content_genre_NL_2016-03-22.csv"
+./parse_CMRT.sh NL
+
+
+
+hdfs dfs -mkdir -p ${hdfs_data}/cmrt_ditto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"OM_Prototype".""."DMPE"."Dim Month"."END_OF_CAL_MONTH" <= TIMESTAMPADD(SQL_TSI_DAY,DAYOFMONTH(CURRENT_DATE) , CURRENT_DATE)
+
+
+hdfs dfs -copyToLocal /user/group/videorep/audience_measurement/data/tva/NL/TVA_NL_2016-03-21.xml.zip /home/bigdata/group/videorep/cmrt/data
+
+
+
+      <ProgramInformation programId="crid://bds.tv/203864312" fragmentId="00000000000010000004000001f1d2ae" fragmentVersion="14584403844728533" xml:lang="nl">
+        <BasicDescription>
+          <Title xml:lang="nl" type="main">Deadly Instincts</Title>
+          <Title xml:lang="en" type="main">Deadly Instincts</Title>
+          <Title xml:lang="nl" type="episodeTitle">Win or Die</Title>
+          <Title xml:lang="en" type="episodeTitle">Win or Die</Title>
+          <Synopsis xml:lang="nl" length="short">Docuserie. Ontdek de meest intense machtsstrijd in het dierenrijk. De strijd om dominantie kan gewelddadig zijn, maar macht is de ultieme prijs.</Synopsis>
+          <Synopsis xml:lang="en" length="short">Explore some of the most intense power struggles in the animal kingdom. The battle for dominance can be brutal, but power is the ultimate prize.</Synopsis>
+          <Synopsis xml:lang="nl" length="medium">Docuserie. Ontdek de meest intense machtsstrijd in het dierenrijk. De strijd om dominantie kan gewelddadig zijn, maar macht is de ultieme prijs.</Synopsis>
+          <Synopsis xml:lang="en" length="medium">Explore some of the most intense power struggles in the animal kingdom. The battle for dominance can be brutal, but power is the ultimate prize.</Synopsis>
+          <Synopsis xml:lang="nl" length="long">Docuserie. Ontdek de meest intense machtsstrijd in het dierenrijk. De strijd om dominantie kan gewelddadig zijn, maar macht is de ultieme prijs.</Synopsis>
+          <Synopsis xml:lang="en" length="long">Explore some of the most intense power struggles in the animal kingdom. The battle for dominance can be brutal, but power is the ultimate prize.</Synopsis>
+          <Keyword xml:lang="en" type="other">Programme Type (one per asset)::Documentary</Keyword>
+          <Keyword xml:lang="en" type="other">Topics::Natural world</Keyword>
+          <Keyword xml:lang="en" type="other">Topics::Animals</Keyword>
+          <Genre href="urn:tva:metadata:cs:UPCEventGenreCS:2009:91" type="main">
+            <Name xml:lang="en">Nature</Name>
+          </Genre>
+          <Genre href="urn:libertyglobal:metadata:cs:ContentCS:2014_1:8.9" type="other">
+            <Name xml:lang="en">Documentary: Natural World</Name>
+          </Genre>
+          <ParentalGuidance>
+            <ParentalRating xmlns="urn:tva:mpeg7:2008" href="urn:tva:metadata:cs:UPCAgeRatingCS:2008:0"/>
+          </ParentalGuidance>
+          <Language>EN</Language>
+          <RelatedMaterial>
+            <HowRelated href="urn:eventis:metadata:cs:HowRelatedCS:2010:boxCover">
+              <Name xml:lang="nl">boxcover</Name>
+            </HowRelated>
+            <MediaLocator>
+              <MediaUri xmlns="urn:tva:mpeg7:2008">http://212.142.41.211/EventImages/196174498.p.f5b1e4b688ea3df2994f979f8cca283dbadd5b87.jpg</MediaUri>
+            </MediaLocator>
+          </RelatedMaterial>
+        </BasicDescription>
+        <OtherIdentifier type="objectid" organization="RBM" authority="RBM">100203864312</OtherIdentifier>
+        <OtherIdentifier type="VodBackOfficeId" organization="eventis" authority="eventis">19ab8373-1e92-4770-9e47-2072ce2c0433</OtherIdentifier>
+        <OtherIdentifier type="IngestedCRID" organization="eventis" authority="eventis">crid://bds.tv/203864312</OtherIdentifier>
+        <MemberOf xsi:type="MemberOfType" crid="crid://upc.com/a0caef2b-8da3-4517-9823-73d30c55f64a" index="73"/>
+        <EpisodeOf crid="crid://bds.tv/196174498" index="6"/>
+      </ProgramInformation>
+
+
+
+./parse_tva_schedule_only.sh NL 2016-04-01
+./parse_tva_schedule_only.sh NL 2016-04-02
+./parse_tva_schedule_only.sh NL 2016-04-03
+./parse_tva_schedule_only.sh NL 2016-04-04
+./parse_tva_schedule_only.sh NL 2016-04-05
+./parse_tva_schedule_only.sh NL 2016-04-06
+./parse_tva_schedule_only.sh NL 2016-04-07
+./parse_tva_schedule_only.sh NL 2016-04-08
+./parse_tva_schedule_only.sh NL 2016-04-09
+./parse_tva_schedule_only.sh NL 2016-04-10
+./parse_tva_schedule_only.sh NL 2016-04-11
+./parse_tva_schedule_only.sh NL 2016-04-12
+./parse_tva_schedule_only.sh NL 2016-04-13
+./parse_tva_schedule_only.sh NL 2016-04-14
+
+
+
+./parse_tva_schedule_only.sh NL 2016-04-01
+./parse_tva_schedule_only.sh NL 2016-04-02
+./parse_tva_schedule_only.sh NL 2016-04-03
+./parse_tva_schedule_only.sh NL 2016-04-04
+./parse_tva_schedule_only.sh NL 2016-04-05
+./parse_tva_schedule_only.sh NL 2016-04-06
+
+./runTVA_tmp.sh NL 2016-04-01
+./runTVA_tmp.sh NL 2016-04-02
+./runTVA_tmp.sh NL 2016-04-03
+./runTVA_tmp.sh NL 2016-04-04
+./runTVA_tmp.sh NL 2016-04-05
+./runTVA_tmp.sh NL 2016-04-06
+
+./runTVA_tmp.sh NL 2016-04-07
+./runTVA_tmp.sh NL 2016-04-08
+./runTVA_tmp.sh NL 2016-04-09
+./runTVA_tmp.sh NL 2016-04-10
+./runTVA_tmp.sh NL 2016-04-11
+./runTVA_tmp.sh NL 2016-04-12
+./runTVA_tmp.sh NL 2016-04-13
+./runTVA_tmp.sh NL 2016-04-14
+./runTVA_tmp.sh NL 2016-04-15
+./runTVA_tmp.sh NL 2016-04-16
+./runTVA_tmp.sh NL 2016-04-17
+./runTVA_tmp.sh NL 2016-04-18
+./runTVA_tmp.sh NL 2016-04-19
+
+
+
+
+
+
+
+
+
+
+
+runTVA_tmp.sh
+
+###########################################################################
+# Name: get_historic_tva_data.sh
+# Author: Chris Redgrave
+# Description: 	This script will get the processed tva data from the bda
+#
+#
+# Version	Date 		Author				Description
+###########################################################################
+# 001		18/04/2016	C.Redgrave			1. Original Version
+###########################################################################
+
+local_data=/home/bigdata/group/videorep/cmrt/data
+hdfs_data=/user/group/videorep/data/cmrt
+script_home=/home/bigdata/group/videorep/cmrt/scripts/python
+tva_home=/user/group/videorep/audience_measurement/data/tva
+
+
+
+cd $script_home
+
+set -x
+country=$1
+process_date=$2
+
+if [ -z "$2" ]
+then
+  process_date=$(date +%Y-%m-%d)
+else
+  process_date=$2
+fi
+
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_content/file_country=${country}/file_process_date=${process_date}/CMRT_content_${country}_${process_date}.csv $local_data
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_content_certification/file_country=${country}/file_process_date=${process_date}/CMRT_content_certification_${country}_${process_date}.csv $local_data
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_content_credits/file_country=${country}/file_process_date=${process_date}/CMRT_content_credits_${country}_${process_date}.csv $local_data
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_content_distributer/file_country=${country}/file_process_date=${process_date}/CMRT_content_distributer_${country}_${process_date}.csv $local_data
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_content_genre/file_country=${country}/file_process_date=${process_date}/CMRT_content_genre_${country}_${process_date}.csv $local_data
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_content_keywords/file_country=${country}/file_process_date=${process_date}/CMRT_content_keyword_${country}_${process_date}.csv $local_data
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_content_synopsis/file_country=${country}/file_process_date=${process_date}/CMRT_content_synopsis_${country}_${process_date}.csv $local_data
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_ditto_content_availability/file_country=${country}/file_process_date=${process_date}/CMRT_ditto_content_availability_${country}_${process_date}.csv $local_data
+hdfs dfs -copyToLocal ${hdfs_data}/cmrt_reference/file_country=${country}/file_process_date=${process_date}/CMRT_reference_${country}_${process_date}.csv $local_data
+
+zip CMRT_${country}_${process_date}.zip *.csv
+
+sftp cmrt@172.16.78.38 <<< "put $local_data/CMRT_${country}_${process_date}.zip"

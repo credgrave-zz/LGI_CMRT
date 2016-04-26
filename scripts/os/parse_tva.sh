@@ -80,6 +80,14 @@
 	    exit
 	fi
 
+echo "###################################################"
+echo "# Pushing Ditto Data to HDFS"
+echo "###################################################"
+zip $local_data/${country}_ditto_${json_process_date}.zip $ditto_file 
+
+hdfs dfs -mkdir -p $hdfs_data/cmrt_ditto/file_country=${country}
+hdfs dfs -mkdir -p $hdfs_data/cmrt_ditto/file_country=${country}/file_process_date=${process_date}
+hdfs dfs -copyFromLocal -f $local_data/${country}_ditto_${json_process_date}.zip $hdfs_data/cmrt_ditto/file_country=${country}/file_process_date=${process_date}
 
 echo "###################################################"
 echo "# Pushing Reference Data to HDFS"
@@ -201,15 +209,17 @@ echo "Creating Trigger File"
 touch $local_data/CMRT.${country}.completed
 echo "Transferring Data to FTP Server"
 
-#sftp user@hostname:$local_data/CMRT_${country}_${process_date}.zip
-#sftp user@hostname:$local_data/CMRT.${country}.completed
+sftp cmrt@172.16.78.38 <<< "put $local_data/CMRT_${country}_${process_date}.zip"
+sftp cmrt@172.16.78.38 <<< "put $local_data/CMRT.${country}.completed"
+
 
 echo "Cleaning Up Files from the Data Directory"
-rm -rf $local_data/*.csv 
+rm -rf $local_data/*.csv
 rm -rf $local_data/${country}
 rm -rf $local_data/*.json
-#rm -rf $local_data/CMRT.${country}.completed
-rm -rf *.csv.zip
+rm -rf $local_data/CMRT.${country}.completed
+rm -rf $local_data/*.csv.zip
+
 
 exit
 

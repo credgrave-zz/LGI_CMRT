@@ -90,6 +90,24 @@ for classificationSchemes in classificationSchemeTable:
 				referenceWriter.writerow(referenceDataRow)
 				referenceDataRow = []
 
+	elif classificationName == 'urn:tva:metadata:cs:UPCEventGenreCS:2009':
+
+		for classification in classificationSchemes:
+			key = classification.attrib.get('termID')
+			
+			for terms in classification:
+				referenceDataRow.append(classificationName) #Classification
+				referenceDataRow.append(terms.attrib.get("{%s}lang" %xmlNS )) #language
+
+				print terms.attrib
+				
+				referenceDataRow.append(key) #Key
+				referenceDataRow.append(ifnull(terms.text,'').encode('utf8')) #Value
+				referenceDataRow.append(country)
+				referenceDataRow.append(process_date)	
+				
+				referenceWriter.writerow(referenceDataRow)
+				referenceDataRow = []
 		
 ################################################
 #
@@ -275,18 +293,19 @@ for ProgramInformation in ProgramInformationTable:
 				
 			if titles.tag == '{urn:tva:metadata:2010}Genre' and titles.attrib.get('type') == 'main':
 
+				genre_language = ''
 				genre_type = titles.attrib.get('type')
 				genre_classification = titles.attrib.get('href').rsplit(':',1)[0]
 				genre_code = titles.attrib.get('href').rsplit(':',1)[-1]
 
-				#genre_language =  titles.attrib.get("{http://www.w3.org/XML/1998/namespace}lang") #Episode Language
-
 				for genre in titles:
 
+					genre_language =  genre.attrib.get("{http://www.w3.org/XML/1998/namespace}lang") #Episode Language
+					
 					genre = genre.text
 
 					genreRow.append(episode_crid.encode('utf8'))
-					genreRow.append('en')
+					genreRow.append(genre_language)
 					genreRow.append(genre_type)
 					genreRow.append(genre_classification)
 					genreRow.append(genre_code)
@@ -473,6 +492,9 @@ synopsis = ''
 synopsis_type = ''
 synop_language = ''
 
+search_string = "{%s}ProgramDescription/{%s}ProgramInformationTable" % (rootNS,rootNS)   
+ProgramInformationTable = tree.getroot().find(search_string)
+
 for ProgramInformation in ProgramInformationTable:
 		
 	if ProgramInformation.tag == "{%s}ProgramInformation" % (rootNS): 
@@ -646,6 +668,7 @@ scheduleWriter = csv.writer(open(outfile_path + '/CMRT_content_schedule_' + coun
 headers = 	[ 'crid'
 			, 'startTime'
 			, 'endTime'
+			, 'channel_name'
 			, 'country'
 			, 'process_date'
 			]
@@ -662,6 +685,9 @@ for ProgramSchedule in ProgramScheduleTable:
 		scheduleCrid = ''
 		scheduleStartTime = ''
 		scheduleEndTime = ''
+		channel_name = ''
+		
+		channel_name = ProgramSchedule.attrib.get("serviceIDRef")
 		
 		for scheduleAttributes in ProgramSchedule:
 	
@@ -681,6 +707,7 @@ for ProgramSchedule in ProgramScheduleTable:
 		scheduleRow.append(scheduleCrid)
 		scheduleRow.append(ifnull(scheduleStartTime,''))	
 		scheduleRow.append(ifnull(scheduleEndTime,''))
+		scheduleRow.append(ifnull(channel_name,''))
 		scheduleRow.append(country)
 		scheduleRow.append(process_date)	
 

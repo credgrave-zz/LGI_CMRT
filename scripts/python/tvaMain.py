@@ -16,6 +16,7 @@ import tvaSynopsis
 import tvaParentalGuidance
 import tvaDistributor
 import tvaSchedule
+import tvaOnDemand
 
 #Arguments
 tva_file = sys.argv[1]
@@ -53,4 +54,4 @@ tvaDistributor.parseWriteContentDistributor(process_date, country, tree, rootNS,
 
 tvaSchedule.parseWriteContentSchedule(process_date, country, tree, rootNS, xmlNS, xsiNS, outfile_path)
 
-
+tvaOnDemand.parseWriteContentOnDemand(process_date, country, tree, rootNS, xmlNS, xsiNS, outfile_path)

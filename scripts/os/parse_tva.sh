@@ -63,9 +63,13 @@
 
 	echo "JSON PROCESS DATE = ${json_process_date}"
 
-	wget http://nl-ditto.chello.com/${country}_ditto_${json_process_date}.json -P $local_data
-
-
+	if wget -q "http://nl-ditto.chello.com/${country}_ditto_${json_process_date}.json"; then
+		wget http://nl-ditto.chello.com/${country}_ditto_${json_process_date}.json -P $local_data
+	else
+		hdfs dfs -copyToLocal /user/group/videorep/data/cmrt/cmrt_ditto/file_country=${country}/file_process_date=${process_date}/${country}_ditto_${json_process_date}.zip $local_data
+		unzip -o $local_data/${country}_ditto_${json_process_date}.zip
+		mv $local_data/${country}_ditto_${process_date}/home/bigdata/group/videorep/cmrt/data/${country}_ditto_${json_process_date}.json $local_data
+	fi
 
 	echo "###################################################"
 	echo "# Processing File: ${ditto_file}"

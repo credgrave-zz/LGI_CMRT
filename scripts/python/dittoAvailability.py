@@ -45,6 +45,12 @@ def parseWriteDittoAvailability(infile_json, outfile_path, ditto_country, ditto_
 
 	json_file=json.loads(json_data)
 
+
+	 check input file
+	if not os.path.exists(infile_json):
+	    print 'input file', infile_json, 'does not exist'
+	    sys.exit(-1)
+
 	# Loop through the TVA_OnDemandProgramTable Entity and Grab 
 	# the data we need and add it to the csv file as a single row per system
 	for record in json_file[u'TVA_OnDemandProgramTable']:

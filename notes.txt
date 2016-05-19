@@ -97,8 +97,11 @@ hdfs dfs -mkdir -p ${hdfs_data}/cmrt_ditto
 
 
 hdfs dfs -copyToLocal /user/group/videorep/audience_measurement/data/tva/NL/TVA_NL_2016-03-21.xml.zip /home/bigdata/group/videorep/cmrt/data
+hdfs dfs -copyToLocal /user/group/videorep/audience_measurement/data/tva/NL/TVA_NL_2016-03-27.xml.zip /home/bigdata/group/videorep/cmrt/data
+hdfs dfs -copyToLocal /user/group/videorep/audience_measurement/data/tva/NL/TVA_NL_2016-03-26.xml.zip /home/bigdata/group/videorep/cmrt/data
 
 
+crid://bds.tv/92130900
 
       <ProgramInformation programId="crid://bds.tv/203864312" fragmentId="00000000000010000004000001f1d2ae" fragmentVersion="14584403844728533" xml:lang="nl">
         <BasicDescription>
@@ -244,3 +247,78 @@ hdfs dfs -copyToLocal ${hdfs_data}/cmrt_reference/file_country=${country}/file_p
 zip CMRT_${country}_${process_date}.zip *.csv
 
 sftp cmrt@172.16.78.38 <<< "put $local_data/CMRT_${country}_${process_date}.zip"
+
+
+
+
+
+
+
+
+
+On Demand Investigation
+=========================
+
+OnDemandProgram - at the end of all the Broadcast Events
+
+      </OnDemandProgram>
+      <OnDemandProgram fragmentId="000000000000100000200000007a4fd0" fragmentVersion="14625466821240601" xml:lang="nl">
+        <Program crid="crid://upc.com/21000/00000000000001578580"/>
+        <ProgramURL>https://link.theplatform.com/s/LgiNlP/KvdpaTlujXdC?format=redirect</ProgramURL>
+        <InstanceMetadataId>imi:2e53b69ba36f7aee64ff621b638ac52f</InstanceMetadataId>
+        <InstanceDescription>
+          <Genre href="urn:tva:metadata:cs:UPCContentProtectionCS:2009:01" type="other">
+            <Name xml:lang="en-EU">Macrovision</Name>
+          </Genre>
+          <Genre href="urn:eventis:metadata:cs:EncryptionAndCopyProtectionCS:2010:copyProtection" type="other"/>
+          <Genre href="urn:eventis:metadata:cs:PropertyCS:2010:profile" type="other">
+            <Definition xml:lang="nl">Orion</Definition>
+          </Genre>
+          <Genre href="urn:tva:metadata:cs:ODPType:UPCNullODP" type="other"/>
+          <PurchaseList>
+            <PurchaseItem>
+              <Price currency="EUR">0</Price>
+              <DRMDeclaration>
+                <DRM>urn:schange:metadata:usagerules</DRM>
+                <LicenseExpression>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;OPL xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:schange:metadata:2013:usagerules"&gt;
+  &lt;APS xmlns=""&gt;1&lt;/APS&gt;
+&lt;/OPL&gt;</LicenseExpression>
+              </DRMDeclaration>
+            </PurchaseItem>
+            <PurchaseItem start="2016-05-06T18:00:00Z" end="2016-05-12T18:00:00Z">
+              <Price currency="EUR">12.5</Price>
+              <Purchase>
+                <PurchaseType href="urn:eventis:metadata:cs:PurchaseTypeCS:2010:availabilityWindow"/>
+              </Purchase>
+              <Purchase>
+                <PurchaseType href="urn:eventis:metadata:cs:PurchaseTypeCS:2010:productCrid">
+                  <Definition>crid://upc.com/21000/ECV_SVOD_1</Definition>
+                </PurchaseType>
+              </Purchase>
+            </PurchaseItem>
+          </PurchaseList>
+          <AVAttributes>
+            <FileSize>523081424</FileSize>
+            <BitRate maximum="3750000">3750000</BitRate>
+            <AudioAttributes>
+              <MixType href="urn:eventis:metadata:cs:AudioPresentationCS:2010:3">
+                <Name xml:lang="en">Stereo</Name>
+                <Definition xml:lang="en">Stereographic sound</Definition>
+              </MixType>
+              <AudioLanguage purpose="urn:tva:metadata:cs:AudioPurposeCS:2007:6">nl</AudioLanguage>
+            </AudioAttributes>
+            <VideoAttributes>
+              <Coding href="urn:mpeg:mpeg7:cs:VisualCodingFormatCS:2001:2">
+                <Name xml:lang="en">MPEG-2 Video</Name>
+                <Definition xml:lang="en">MPEG-2 Video Coding Format</Definition>
+              </Coding>
+              <AspectRatio type="publication">16:9</AspectRatio>
+            </VideoAttributes>
+          </AVAttributes>
+          <MemberOf xsi:type="MemberOfType" crid="crid://upc.com/21000/ECV_SVOD_1"/>
+          <OtherIdentifier type="VodBackOfficeId" organization="eventis" authority="eventis">81c259b1-0f70-48e9-8962-80c4057800ec</OtherIdentifier>
+          <OtherIdentifier type="UPC_ADI_PACKAGE_ID" organization="eventis" authority="eventis">21000#00000000000001578580</OtherIdentifier>
+        </InstanceDescription>
+        <PublishedDuration>PT15M</PublishedDuration>
+      </OnDemandProgram>

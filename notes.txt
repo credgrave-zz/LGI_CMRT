@@ -322,3 +322,52 @@ OnDemandProgram - at the end of all the Broadcast Events
         </InstanceDescription>
         <PublishedDuration>PT15M</PublishedDuration>
       </OnDemandProgram>
+
+
+
+./parse_CMRT.sh NL 2016-05-02
+./parse_CMRT.sh NL 2016-05-03
+./parse_CMRT.sh NL 2016-05-04
+./parse_CMRT.sh NL 2016-05-05
+./parse_CMRT.sh NL 2016-05-06
+./parse_CMRT.sh NL 2016-05-07
+./parse_CMRT.sh NL 2016-05-08
+./parse_CMRT.sh NL 2016-05-09
+./parse_CMRT.sh NL 2016-05-10
+./parse_CMRT.sh NL 2016-05-11
+./parse_CMRT.sh NL 2016-05-12
+./parse_CMRT.sh NL 2016-05-13
+
+
+/user/group/videorep/data/cmrt/cmrt_ditto/file_country=NL/file_process_date=2016-05-01/NL_ditto_2016-05-01.zip
+/user/group/videorep/data/cmrt/cmrt_ditto/file_country=NL/file_process_date=2016-05-01
+
+
+
+
+
+./parse_CMRT.sh NL 2016-05-02
+./parse_CMRT.sh NL 2016-05-03
+./parse_CMRT.sh NL 2016-05-04
+./parse_CMRT.sh NL 2016-05-05
+./parse_CMRT.sh NL 2016-05-06
+./parse_CMRT.sh NL 2016-05-07
+./parse_CMRT.sh NL 2016-05-08
+./parse_CMRT.sh NL 2016-05-09
+./parse_CMRT.sh NL 2016-05-10
+./parse_CMRT.sh NL 2016-05-11
+./parse_CMRT.sh NL 2016-05-12
+./parse_CMRT.sh NL 2016-05-13
+
+
+CMRT_MONTH_DAY
+
+
+
+NEW systems:
+
+_OESP
+requestTime
+Exists
+request
+AvailabilityTime

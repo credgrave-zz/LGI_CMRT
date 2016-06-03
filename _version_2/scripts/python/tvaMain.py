@@ -4,7 +4,6 @@
 import os
 import sys
 import re
-import csv
 import xml.etree.cElementTree as ET
 
 # Custom Module Imports

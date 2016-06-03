@@ -6,7 +6,7 @@ import sys
 import re
 
 # Custom Module Imports
-import dittoAvailability_new
+import dittoAvailability
 
 #Arguments
 infile_json= sys.argv[1]
@@ -20,8 +20,8 @@ ditto_date= sys.argv[4]
 #    print 'input file', infile_json, 'does not exist'
 #    sys.exit(-1)
 
-#dittoAvailability.parseWriteDittoAvailability(infile_json, outfile_path, ditto_country, ditto_date)
-dittoAvailability_new.parseWriteDittoAvailability(infile_json, outfile_path, ditto_country, ditto_date)
+# XML Constants
+dittoAvailability.parseWriteDittoAvailability(infile_json, outfile_path, ditto_country, ditto_date)
 
 
 

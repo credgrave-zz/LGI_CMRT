@@ -92,6 +92,7 @@ hdfs dfs -mkdir -p $hdfs_data/cmrt_ditto/file_country=${country}
 hdfs dfs -mkdir -p $hdfs_data/cmrt_ditto/file_country=${country}/file_process_date=${process_date}
 hdfs dfs -copyFromLocal -f $local_data/${country}_ditto_${json_process_date}.zip $hdfs_data/cmrt_ditto/file_country=${country}/file_process_date=${process_date}
 
+
 echo "###################################################"
 echo "# Pushing Reference Data to HDFS"
 echo "###################################################"
@@ -102,6 +103,7 @@ hdfs dfs -copyFromLocal -f $local_data/CMRT_reference_${country}_${process_date}
 
 echo "Adding Partitions to the HIVE Table: cmrt_reference"
 hive -e "use cmrt;alter table cmrt_reference add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
+
 
 echo "###################################################"
 echo "# Pushing Certification Data to HDFS"
@@ -114,6 +116,7 @@ hdfs dfs -copyFromLocal -f $local_data/CMRT_content_certification_${country}_${p
 echo "Adding Partitions to the HIVE Table: cmrt_content_certification"
 hive -e "use cmrt;alter table cmrt_content_certification add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
 
+
 echo "###################################################"
 echo "# Pushing Credits Data to HDFS"
 echo "###################################################"
@@ -124,6 +127,7 @@ hdfs dfs -copyFromLocal -f $local_data/CMRT_content_credits_${country}_${process
 
 echo "Adding Partitions to the HIVE Table: cmrt_content_credits"
 hive -e "use cmrt;alter table cmrt_content_credits add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
+
 
 echo "###################################################"
 echo "# Pushing Distributer Data to HDFS"
@@ -136,6 +140,7 @@ hdfs dfs -copyFromLocal -f $local_data/CMRT_content_distributer_${country}_${pro
 echo "Adding Partitions to the HIVE Table: cmrt_content_distributer"
 hive -e "use cmrt;alter table cmrt_content_distributer add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
 
+
 echo "###################################################"
 echo "# Pushing Genre Data to HDFS"
 echo "###################################################"
@@ -146,6 +151,7 @@ hdfs dfs -copyFromLocal -f $local_data/CMRT_content_genre_${country}_${process_d
 
 echo "Adding Partitions to the HIVE Table: cmrt_content_genre"
 hive -e "use cmrt;alter table cmrt_content_genre add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
+
 
 echo "###################################################"
 echo "# Pushing Keyword Data to HDFS"
@@ -158,6 +164,7 @@ hdfs dfs -copyFromLocal -f $local_data/CMRT_content_keywords_${country}_${proces
 echo "Adding Partitions to the HIVE Table: cmrt_content_keywords"
 hive -e "use cmrt;alter table cmrt_content_keywords add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
 
+
 echo "###################################################"
 echo "# Pushing Content Data to HDFS"
 echo "###################################################"
@@ -168,6 +175,7 @@ hdfs dfs -copyFromLocal -f $local_data/CMRT_content_${country}_${process_date}.c
 
 echo "Adding Partitions to the HIVE Table: cmrt_content_keywords"
 hive -e "use cmrt;alter table cmrt_content add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
+
 
 echo "###################################################"
 echo "# Pushing Synopsis Data to HDFS"
@@ -180,6 +188,7 @@ hdfs dfs -copyFromLocal -f $local_data/CMRT_content_synopsis_${country}_${proces
 echo "Adding Partitions to the HIVE Table: cmrt_content_synopsis"
 hive -e "use cmrt;alter table cmrt_content_synopsis add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
 
+
 echo "###################################################"
 echo "# Pushing Availability Data to HDFS"
 echo "###################################################"
@@ -190,6 +199,34 @@ hdfs dfs -copyFromLocal -f $local_data/CMRT_ditto_content_availability_${country
 
 echo "Adding Partitions to the HIVE Table: cmrt_ditto_content_availability"
 hive -e "use cmrt;alter table cmrt_ditto_content_availability add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
+
+
+echo "###################################################"
+echo "# Pushing OnDemand Data to HDFS"
+echo "###################################################"
+hdfs dfs -mkdir -p $hdfs_data/cmrt_ditto_content_ondemand/file_country=${country}
+hdfs dfs -mkdir -p $hdfs_data/cmrt_ditto_content_ondemand/file_country=${country}/file_process_date=${process_date}
+
+hdfs dfs -copyFromLocal -f $local_data/CMRT_ditto_content_onDemand_${country}_${process_date}.csv $hdfs_data/cmrt_ditto_content_availability/file_country=${country}/file_process_date=${process_date}
+
+echo "Adding Partitions to the HIVE Table: cmrt_ditto_content_onDemand_"
+hive -e "use cmrt;alter table cmrt_ditto_content_ondemand add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
+
+
+echo "###################################################"
+echo "# Pushing Schedule Data to HDFS"
+echo "###################################################"
+
+hdfs dfs -mkdir -p $hdfs_data/cmrt_ditto_content_schedule/file_country=${country}
+hdfs dfs -mkdir -p $hdfs_data/cmrt_ditto_content_schedule/file_country=${country}/file_process_date=${process_date}
+
+hdfs dfs -copyFromLocal -f $local_data/CMRT_ditto_content_schedule_${country}_${process_date}.csv $hdfs_data/cmrt_ditto_content_availability/file_country=${country}/file_process_date=${process_date}
+
+echo "Adding Partitions to the HIVE Table: cmrt_ditto_content_schedule"
+hive -e "use cmrt;alter table cmrt_ditto_content_schedule add partition(file_country='"${country}"', file_process_date='"${process_date}"');"
+
+
+
 
 echo "###################################################"
 echo "# Pushing Data Files to Informatica"
@@ -205,10 +242,13 @@ sftp cmrt@172.16.78.38 <<< "put $local_data/CMRT_${country}_${process_date}.zip"
 sftp cmrt@172.16.78.38 <<< "put $local_data/CMRT.${country}.completed"
 
 echo "Cleaning Up Files from the Data Directory"
-rm -rf $local_data/*.csv
+rm -rf $local_data/CMRT_*_${country}_${process_date}
 rm -rf $local_data/${country}
 rm -rf $local_data/*.json
 rm -rf $local_data/CMRT.${country}.completed
-rm -rf $local_data/*.csv.zip
+rm -rf $local_data/CMRT_${country}_${process_date}.zip
+rm -rf $local_data/${country}_ditto_${json_process_date}.zip
+rm -rf ${local_tva_file}.xml.zip
+
 
 exit

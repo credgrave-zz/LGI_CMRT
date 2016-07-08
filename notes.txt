@@ -345,19 +345,32 @@ OnDemandProgram - at the end of all the Broadcast Events
 
 
 
-
+./parse_CMRT.sh NL 2016-05-01
 ./parse_CMRT.sh NL 2016-05-02
 ./parse_CMRT.sh NL 2016-05-03
 ./parse_CMRT.sh NL 2016-05-04
 ./parse_CMRT.sh NL 2016-05-05
-./parse_CMRT.sh NL 2016-05-06
-./parse_CMRT.sh NL 2016-05-07
-./parse_CMRT.sh NL 2016-05-08
-./parse_CMRT.sh NL 2016-05-09
-./parse_CMRT.sh NL 2016-05-10
-./parse_CMRT.sh NL 2016-05-11
-./parse_CMRT.sh NL 2016-05-12
-./parse_CMRT.sh NL 2016-05-13
+
+
+
+
+
+./parse_CMRT_cr.sh NL 2016-05-06
+./parse_CMRT_cr.sh NL 2016-05-07
+./parse_CMRT_cr.sh NL 2016-05-08
+./parse_CMRT_cr.sh NL 2016-05-09
+./parse_CMRT_cr.sh NL 2016-05-10
+./parse_CMRT_cr.sh NL 2016-05-11
+./parse_CMRT_cr.sh NL 2016-05-12
+./parse_CMRT_cr.sh NL 2016-05-13
+./parse_CMRT_cr.sh NL 2016-05-14
+./parse_CMRT_cr.sh NL 2016-05-15
+
+
+
+
+
+
 
 
 CMRT_MONTH_DAY
@@ -371,3 +384,8 @@ requestTime
 Exists
 request
 AvailabilityTime
+
+
+
+
+hdfs dfs -copyToLocal /user/group/videorep/audience_measurement/data/tva/NL/TVA_NL_2016-03-21.xml.zip /home/bigdata/group/videorep/cmrt/data
